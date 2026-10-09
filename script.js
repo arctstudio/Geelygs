@@ -7,8 +7,8 @@ const carModels = [
     name: "Geely Starray EM-i",
     shortName: "Geely Starray EM-i",
     price: "Rp498.000.000",
-    image: "assets/Geely-starray-em-i.png",
-    thumb: "assets/Geely-starray-em-i.png",
+    image: "assets/Geely-starray-em-i.webp",
+    thumb: "assets/Geely-starray-em-i.webp",
     bgClass: "bg-slate-900",
     description: "Super Hybrid SUV revolusioner berteknologi NordThor Powertrain. Jarak jelajah ekstra irit hingga 1.420 km sekali isi, performa instan bertenaga, serta kenyamanan kabin pintar kelas atas.",
     keyHighlights: [
@@ -17,14 +17,14 @@ const carModels = [
       { top: "Akselerasi", value: "7.5s", sub: "0 - 100 km/h" }
     ],
     gallery: [
-      "assets/starray em-i/05_1778503301-exterior-1.webp.png",
-      "assets/starray em-i/06_1778503477-exterior-2.webp.png",
-      "assets/starray em-i/07_1778503665-exterior-4.webp.png",
-      "assets/starray em-i/09_1778503633-exterior-3.webp.png",
-      "assets/starray em-i/12_1778504040-interior-2.webp.png",
-      "assets/starray em-i/14_1778504337-interior-5.webp.png",
-      "assets/starray em-i/68_1778566865-flyme-sound.webp.png",
-      "assets/starray em-i/75_1766552789-driving-safety-540-parking-assist.png"
+      "assets/starray em-i/05_1778503301-exterior-1.jpeg",
+      "assets/starray em-i/06_1778503477-exterior-2.jpeg",
+      "assets/starray em-i/07_1778503665-exterior-4.jpeg",
+      "assets/starray em-i/09_1778503633-exterior-3.jpeg",
+      "assets/starray em-i/12_1778504040-interior-2.jpeg",
+      "assets/starray em-i/14_1778504337-interior-5.jpeg",
+      "assets/starray em-i/68_1778566865-flyme-sound.jpeg",
+      "assets/starray em-i/75_1766552789-driving-safety-540-parking-assist.jpeg"
     ],
     specs: {
       "MESIN & PERFORMA HYBRID": [
@@ -72,8 +72,8 @@ const carModels = [
     name: "Geely EX2 EV",
     shortName: "Geely EX2 EV",
     price: "Rp228.000.000",
-    image: "assets/Geely-EX2.png",
-    thumb: "assets/Geely-EX2.png",
+    image: "assets/Geely-EX2.webp",
+    thumb: "assets/Geely-EX2.webp",
     bgClass: "bg-slate-800",
     description: "City car listrik kompak yang lincah, stylish, dan ekstra hemat energi. Solusi sempurna mobilitas harian bebas emisi dengan fitur cerdas dan pengisian daya super cepat.",
     keyHighlights: [
@@ -120,8 +120,8 @@ const carModels = [
     name: "Geely Coolray",
     shortName: "Geely Coolray",
     price: "Rp385.000.000",
-    image: "assets/Geely-Coolray.png",
-    thumb: "assets/Geely-Coolray.png",
+    image: "assets/Geely-Coolray.webp",
+    thumb: "assets/Geely-Coolray.webp",
     bgClass: "bg-slate-800",
     description: "Compact SUV sporty berkinerja tinggi dengan mesin 1.5L Turbo Leishen Power. Akselerasi instan 0-100 km/h dalam 7,6 detik dan gaya aerodinamis yang membakar semangat.",
     keyHighlights: [
@@ -168,8 +168,8 @@ const carModels = [
     name: "Geely EX5 EV",
     shortName: "Geely EX5 EV",
     price: "Rp458.000.000",
-    image: "assets/Geely-EX5.png",
-    thumb: "assets/Geely-EX5.png",
+    image: "assets/Geely-EX5.webp",
+    thumb: "assets/Geely-EX5.webp",
     bgClass: "bg-slate-900",
     description: "Medium SUV listrik murni (BEV) berstandar global dengan platform canggih GEA. Jarak tempuh hingga 530 km, pengisian kilat 20 menit, dan sertifikasi keselamatan bintang lima.",
     keyHighlights: [
@@ -179,12 +179,12 @@ const carModels = [
     ],
     gallery: [
       "assets/ex5/16_1778576328-ex5-skyview-large.jpg.jpeg",
-      "assets/ex5/23_1766025537-exterior-sleek-sihouette.jpg.jpeg",
-      "assets/ex5/26_1778577901-ex5-hud.jpg.jpeg",
+      "assets/ex5/23_1766025537-exterior-sleek-sihouette.jpg",
+      "assets/ex5/26_1778577901-ex5-hud.jpg",
       "assets/ex5/17_1778576599-ex5-smartech-large.jpg.jpeg",
-      "assets/ex5/25_1776152433-eight-airbags.png",
+      "assets/ex5/25_1776152433-eight-airbags.jpeg",
       "assets/ex5/30_1776269600-ex5-performance-1.jpg.jpeg",
-      "assets/ex5/21_1778581323-slide-3.webp.png"
+      "assets/ex5/21_1778581323-slide-3.jpeg"
     ],
     specs: {
       "MOTOR LISTRIK & PERFORMA": [
