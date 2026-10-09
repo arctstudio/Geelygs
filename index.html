@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Geely Gading Serpong 2026 - Dealer Resmi Geely Tangerang</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  
+  <!-- Google Fonts: Michroma & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            michroma: ['Michroma', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          },
+          colors: {
+            brand: {
+              green: '#22C55E',
+              greenDark: '#16A34A',
+              dark: '#0A111D',
+              teal: '#091D1C',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-200 antialiased selection:bg-emerald-500 selection:text-white">
+
+  <!-- Mobile View Container Frame (Locked & Unchanged for Mobile Devices) -->
+  <div class="block md:hidden max-w-[440px] mx-auto min-h-screen bg-[#F3F4F6] shadow-2xl relative overflow-hidden pb-12">
+
+    <!-- ==================== HERO SECTION WITH VIDEO BACKGROUND & IMAGE POSTER FALLBACK ==================== -->
+    <header class="hero-bg-overlay relative w-full min-h-[100dvh] text-white overflow-hidden shadow-2xl">
+      
+      <!-- Background Video (Fades in over static hero-image.jpeg fallback when ready) -->
+      <video 
+        id="hero-bg-video"
+        autoplay 
+        muted 
+        loop 
+        playsinline 
+        poster="assets/hero-image.jpeg"
+        class="absolute inset-0 w-full h-full object-cover pointer-events-none opacity-0 transition-opacity duration-1000 z-0"
+        oncanplay="this.classList.remove('opacity-0'); this.classList.add('opacity-100');"
+        onplaying="this.classList.remove('opacity-0'); this.classList.add('opacity-100');">
+        <source src="assets/hero-video.mp4" type="video/mp4">
+      </video>
+
+      <!-- Soft Ambient Overlay for Optimal Text Readability -->
+      <div class="absolute inset-0 bg-slate-950/20 pointer-events-none z-[1]"></div>
+
+      <!-- Main Content Layer -->
+      <div class="relative z-10 w-full min-h-[100dvh] pt-6 pb-8 px-5 flex flex-col justify-between">
+        
+        <!-- Top Section (Nav + Title) -->
+        <div>
+          <!-- Top Header Nav Bar -->
+          <div class="flex justify-between items-center relative z-10 mb-6">
+            <!-- Left: Geely Logo -->
+            <div class="flex items-center space-x-2">
+              <img src="assets/logo-geely-white.svg" alt="Geely Auto Logo" class="h-4 sm:h-5 w-auto drop-shadow-md">
+            </div>
+            <!-- Right: Mimosa Logo -->
+            <div class="flex items-center">
+              <img src="assets/mimosa_logo.png" alt="Mimosa Logo" class="h-5 sm:h-6 w-auto object-contain drop-shadow-md">
+            </div>
+          </div>
+
+          <!-- Hero Main Title (Font: Michroma) -->
+          <div class="relative z-10 mt-3 mb-4">
+            <h1 class="font-michroma font-bold text-2xl sm:text-3xl text-white tracking-tight leading-[1.25] drop-shadow-lg hero-reveal-title">
+              Promo Geely<br>
+              Gading Serpong<br>
+              2026
+            </h1>
+          </div>
+        </div>
+
+        <!-- Middle Space for Video / Hero Visuals -->
+        <div class="flex-grow min-h-[180px] sm:min-h-[240px]"></div>
+
+        <!-- Bottom Section (Subtitle Description + Action Buttons) -->
+        <div class="relative z-10 mt-auto">
+          <!-- Subtitle Description -->
+          <p class="text-[11px] sm:text-xs text-slate-200 leading-relaxed mb-6 text-left font-normal max-w-[75%] px-0 drop-shadow-md hero-reveal-sub">
+            Rasakan sensasi berkendara futuristik bersama jajaran mobil listrik & hybrid Geely terbaru 2026. Dapatkan promo eksklusif & pelayanan resmi terbaik di Gading Serpong.
+          </p>
+
+          <!-- Action Hero Buttons -->
+          <div class="grid grid-cols-2 gap-3 hero-reveal-btn">
+            <!-- White Pill Button -->
+            <button onclick="openTestDriveModal()" class="w-full bg-white hover:bg-slate-100 text-slate-900 font-bold py-3.5 px-3 rounded-full text-xs sm:text-sm transition-all duration-200 shadow-xl active:scale-95 flex items-center justify-center">
+              Test Drive
+            </button>
+            <!-- Green Pill Button -->
+            <button onclick="openWhatsApp()" class="w-full bg-[#22C55E] hover:bg-emerald-600 text-white font-bold py-3.5 px-3 rounded-full text-xs sm:text-sm transition-all duration-200 shadow-xl glow-green active:scale-95 flex items-center justify-center space-x-1.5">
+              <i class="fa-brands fa-whatsapp text-base"></i>
+              <span>Whatsapp</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <!-- ==================== MODEL SELECTION CAROUSEL SECTION ==================== -->
+    <section class="px-4 pt-6 pb-2">
+      <!-- Section Tag Header -->
+      <div class="font-michroma text-[9px] font-bold tracking-widest text-slate-400 uppercase mb-3 px-1">
+        PILIH TIPE MOBIL
+      </div>
+
+      <!-- Model Cards Horizontal Tab Container -->
+      <div class="grid grid-cols-4 gap-2 mb-6">
+
+        <!-- Card 1: STARRAY EM-i -->
+        <button onclick="selectModel(0)" class="model-tab rounded-2xl p-2 flex flex-col items-center justify-between border transition-all duration-200 cursor-pointer text-center bg-white text-slate-700 border-slate-200 hover:border-slate-300">
+          <div class="text-[8px] sm:text-[9px] font-bold tracking-tight mb-1 truncate w-full font-michroma">STARRAY EM-i</div>
+          <div class="h-10 w-full flex items-center justify-center overflow-hidden">
+            <img src="assets/Geely-starray-em-i.png" alt="STARRAY EM-i" class="max-h-full max-w-full object-contain">
+          </div>
+        </button>
+
+        <!-- Card 2: EX2 EV -->
+        <button onclick="selectModel(1)" class="model-tab rounded-2xl p-2 flex flex-col items-center justify-between border transition-all duration-200 cursor-pointer text-center bg-white text-slate-700 border-slate-200 hover:border-slate-300">
+          <div class="text-[8px] sm:text-[9px] font-bold tracking-tight mb-1 truncate w-full font-michroma">EX2 EV</div>
+          <div class="h-10 w-full flex items-center justify-center overflow-hidden">
+            <img src="assets/Geely-EX2.png" alt="EX2 EV" class="max-h-full max-w-full object-contain">
+          </div>
+        </button>
+
+        <!-- Card 3: COOLRAY -->
+        <button onclick="selectModel(2)" class="model-tab rounded-2xl p-2 flex flex-col items-center justify-between border transition-all duration-200 cursor-pointer text-center bg-white text-slate-700 border-slate-200 hover:border-slate-300">
+          <div class="text-[8px] sm:text-[9px] font-bold tracking-tight mb-1 truncate w-full font-michroma">COOLRAY</div>
+          <div class="h-10 w-full flex items-center justify-center overflow-hidden">
+            <img src="assets/Geely-Coolray.png" alt="COOLRAY" class="max-h-full max-w-full object-contain">
+          </div>
+        </button>
+
+        <!-- Card 4: EX5 EV -->
+        <button onclick="selectModel(3)" class="model-tab rounded-2xl p-2 flex flex-col items-center justify-between border transition-all duration-200 cursor-pointer text-center bg-white text-slate-700 border-slate-200 hover:border-slate-300">
+          <div class="text-[8px] sm:text-[9px] font-bold tracking-tight mb-1 truncate w-full font-michroma">EX5 EV</div>
+          <div class="h-10 w-full flex items-center justify-center overflow-hidden">
+            <img src="assets/Geely-EX5.png" alt="EX5 EV" class="max-h-full max-w-full object-contain">
+          </div>
+        </button>
+
+      </div>
+
+      <!-- Active Model Navigation Header with Left/Right Arrows -->
+      <div class="flex justify-between items-center px-2 mb-2">
+        <button id="btn-prev-model" class="w-8 h-8 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center text-slate-600 hover:bg-slate-50 active:scale-90 transition-all">
+          <i class="fa-solid fa-chevron-left text-xs"></i>
+        </button>
+
+        <h2 id="active-model-nav-name" class="font-michroma font-bold text-base sm:text-xl text-slate-900 tracking-tight text-center">
+          Geely Starray EM-i
+        </h2>
+
+        <button id="btn-next-model" class="w-8 h-8 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center text-slate-600 hover:bg-slate-50 active:scale-90 transition-all">
+          <i class="fa-solid fa-chevron-right text-xs"></i>
+        </button>
+      </div>
+
+      <!-- Main Showcase Car Cutout Image -->
+      <div class="car-image-container my-3 py-1 flex justify-center items-center">
+        <img id="active-car-img" src="assets/Geely-starray-em-i.png" alt="Geely Active Model" class="w-full max-w-[380px] h-auto object-contain drop-shadow-xl transition-transform duration-300 hover:scale-105">
+      </div>
+
+      <!-- Starting Price Tag (Placed Directly Above the 3-Point Spec Grid) -->
+      <div class="text-center mt-2 mb-3">
+        <div id="active-car-price" class="font-michroma font-bold text-2xl sm:text-3xl text-slate-900 tracking-tight">
+          Rp498.000.000
+        </div>
+      </div>
+
+      <!-- 3 Key Specs Highlight Grid (Transparent Fill, Minimalist Stroke Dividers) -->
+      <div id="active-key-highlights" class="grid grid-cols-3 divide-x divide-slate-300/80 my-4 py-2 border-y border-slate-300/40">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+
+    </section>
+
+
+    <!-- ==================== MODEL PHOTO CAROUSEL SECTION (PURE IMAGES SLIDER) ==================== -->
+    <section class="px-4 mb-6">
+      <!-- Horizontal Scrollable Pure Image Carousel (No text headers or titles) -->
+      <div id="model-gallery-container" class="flex overflow-x-auto snap-x snap-mandatory gap-3 no-scrollbar py-1">
+        <!-- Dynamic gallery photos rendered by script.js -->
+      </div>
+    </section>
+
+
+    <!-- ==================== SPECIFICATIONS COLLAPSIBLE SECTION (MINIMALIST STROKE LINE STYLE) ==================== -->
+    <section class="px-4 mb-6">
+      <div class="border-y border-slate-300/50 py-5 px-1 my-2">
+        
+        <!-- Header Model Title in Spec Box -->
+        <h3 id="spec-card-title" class="font-michroma font-bold text-lg text-slate-900 mb-2">
+          Geely Starray EM-i
+        </h3>
+
+        <!-- Description text -->
+        <p id="spec-card-desc" class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+          Super Hybrid SUV canggih dengan teknologi NordThor Powertrain, efisiensi bahan bakar ekstra irit hingga 1.420 km, respon berkendara bertenaga, dan teknologi kabin pintar terkini.
+        </p>
+
+        <!-- Collapsible Accordion Wrapper -->
+        <div id="spec-accordion-wrapper" class="spec-accordion-content border-t border-slate-300/40 pt-4">
+          <!-- Dynamic Spec Categories Container -->
+          <div id="spec-details-container" class="space-y-6">
+            <!-- Dynamic contents populated via script.js -->
+          </div>
+        </div>
+
+        <!-- Accordion Toggle Button -->
+        <div class="pt-4 border-t border-slate-300/40 mt-3 text-center">
+          <button id="btn-toggle-spec" class="w-full py-2.5 px-4 bg-transparent hover:bg-slate-300/20 text-slate-900 font-bold text-xs rounded-2xl border border-slate-300/80 transition-all flex items-center justify-center space-x-2">
+            <span id="accordion-btn-text">Lihat Spesifikasi Lengkap</span>
+            <i id="accordion-btn-icon" class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== REDESIGNED FLOATING 3D PROFILE CARD SECTION (TOTO KUSUMAH) ==================== -->
+    <section class="px-4 mb-6">
+      <div class="border-y border-slate-300/50 py-6 px-1 my-2">
+        
+        <!-- Floating Layered Stacked Container (3 Floating Elements into 1 Unified Composition - Enlarged) -->
+        <div class="relative w-full max-w-[340px] mx-auto my-6 pt-3 pb-5">
+
+          <!-- Element 1: Floating Name & Status Card (Top-Left Overlapping) -->
+          <div class="absolute -top-4 -left-3 z-20 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-xl border border-slate-200/80 flex items-center space-x-3 animate-float">
+            <div class="w-9 h-9 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-xs shrink-0 shadow">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div>
+              <h4 class="font-michroma font-bold text-xs text-slate-900 leading-none">Toto Kusumah</h4>
+              <span class="text-[10px] font-semibold text-slate-500">Sales Official Geely</span>
+            </div>
+          </div>
+
+          <!-- Element 2: 3D Flip Profile Image Card (Center Main Floating Element - Enlarged) -->
+          <div class="flip-card-container w-full h-[360px] sm:h-[390px] rounded-[28px] cursor-pointer select-none relative z-10" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner relative w-full h-full">
+              
+              <!-- Front Side: Photo of Toto Kusumah -->
+              <div class="flip-card-front absolute inset-0 w-full h-full rounded-[28px] overflow-hidden bg-slate-100 shadow-xl border border-slate-200/60">
+                <img src="assets/totokusumahprofile.png" alt="Toto Kusumah Sales Official Geely" class="w-full h-full object-cover">
+                <!-- Hint Badge -->
+                <div class="absolute bottom-3 left-1/2 -translate-x-1/2 bg-slate-900/80 backdrop-blur-sm text-white text-[10px] font-bold px-3.5 py-1 rounded-full border border-slate-700/80 flex items-center space-x-1.5 shadow pointer-events-none">
+                  <i class="fa-solid fa-rotate text-xs"></i>
+                  <span>Hover / Tap untuk info</span>
+                </div>
+              </div>
+
+              <!-- Back Side: Solid Black Background + "Official Geely Sales" + Instagram Button @geely.toto -->
+              <div class="flip-card-back absolute inset-0 w-full h-full rounded-[28px] overflow-hidden bg-black text-white p-6 flex flex-col justify-center items-center text-center shadow-2xl border border-neutral-800">
+                <div class="w-16 h-16 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center justify-center text-3xl mb-4 shadow-inner">
+                  <i class="fa-solid fa-user-check"></i>
+                </div>
+                <h4 class="font-michroma font-bold text-base sm:text-lg text-white tracking-wide mb-1">
+                  Official Geely Sales
+                </h4>
+                <p class="text-xs text-neutral-400 leading-relaxed mb-6 max-w-[220px]">
+                  Toto Kusumah
+                </p>
+                <a href="https://www.instagram.com/geely.toto/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2.5 bg-gradient-to-r from-amber-500 via-rose-500 to-purple-600 hover:opacity-95 text-white font-bold px-6 py-3 rounded-full text-xs sm:text-sm transition-all shadow-lg active:scale-95" onclick="event.stopPropagation()">
+                  <i class="fa-brands fa-instagram text-base"></i>
+                  <span>@geely.toto</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Element 3: Floating Icon Badge Verification (Bottom-Right Overlapping) -->
+          <div class="absolute -bottom-4 -right-3 z-20 bg-slate-900/95 text-white backdrop-blur-md px-4 py-2.5 rounded-full shadow-2xl border border-slate-800 flex items-center space-x-2 text-xs font-bold">
+            <i class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
+            <span>Verified Official</span>
+          </div>
+
+        </div>
+
+        <!-- Consultation Content Below Stacked Cards -->
+        <div class="p-2 pt-6 text-center">
+          <h3 class="font-michroma font-bold text-sm sm:text-base text-slate-900 leading-snug mb-2">
+            Konsultasi Penawaran Terbaik bersama Toto Kusumah
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
+            Dapatkan info promo terbaru, hitungan kredit sesuai budget, trade-in harga terbaik, dan pelayanan terbaik unit Geely langsung ke lokasi Anda.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== PROMO BANNER CARD SECTION (ADMIT ONE TICKET PASS) ==================== -->
+    <section class="px-4 mb-6">
+      
+      <!-- SVG Defs for Ticket Clip-Path -->
+      <svg width="0" height="0" class="absolute pointer-events-none">
+        <defs>
+          <clipPath id="ticket-clip-shape" clipPathUnits="objectBoundingBox">
+            <path d="M 0.0337,0 L 0.7301,0 A 0.0283,0.0494 0 0,0 0.7867,0 L 0.9663,0 A 0.0337,0.0588 0 0,1 1,0.0588 L 1,0.9412 A 0.0337,0.0588 0 0,1 0.9663,1 L 0.7867,1 A 0.0283,0.0494 0 0,0 0.7301,1 L 0.0337,1 A 0.0337,0.0588 0 0,1 0,0.9412 L 0,0.0588 A 0.0337,0.0588 0 0,1 0.0337,0 Z" />
+          </clipPath>
+        </defs>
+      </svg>
+
+      <div class="relative w-full overflow-visible py-2 flex flex-col items-center">
+        
+        <!-- Interactive 3D Tilt Ticket Wrapper -->
+        <div id="ticket-tilt-wrapper" class="relative w-full max-w-[380px] cursor-pointer select-none transition-transform duration-300 ease-out will-change-transform" style="transform-style: preserve-3d;">
+          
+          <!-- Admit One Ticket Card Container with SVG Clip-Path -->
+          <div id="ticket-card-container" class="relative w-full aspect-[741/425] shadow-2xl overflow-hidden" style="clip-path: url(#ticket-clip-shape); -webkit-clip-path: url(#ticket-clip-shape);">
+            
+            <!-- WebGL Canvas Shader Background Mount -->
+            <div id="ticket-shader-mount" class="absolute inset-0 w-full h-full bg-[#0f172a]"></div>
+
+            <!-- Perforation Line -->
+            <div class="absolute top-0 bottom-0 left-[75.8%] w-[2px] border-r-2 border-dashed border-white/25 pointer-events-none z-10"></div>
+
+            <!-- Watermark Text on Stub -->
+            <div class="absolute right-0 top-0 bottom-0 w-[24.2%] flex items-center justify-center font-bold text-white/20 text-4xl sm:text-5xl tracking-tighter select-none pointer-events-none z-10" style="writing-mode: vertical-rl;">
+              2026
+            </div>
+
+            <!-- Ticket Content Overlay Layer -->
+            <div class="absolute inset-0 p-4 sm:p-5 flex flex-col justify-between text-white font-sans z-20 pointer-events-none">
+              
+              <!-- Top Label (Presenter & Event) -->
+              <div>
+                <div class="text-[9px] sm:text-[10px] font-extrabold uppercase tracking-wider text-slate-300/90 leading-tight">
+                  GEELY GADING SERPONG PRESENTS
+                </div>
+                <div class="text-[10px] sm:text-[11px] font-black uppercase tracking-widest text-white leading-tight">
+                  PROMO SPESIAL 2026
+                </div>
+              </div>
+
+              <!-- Main Title / Name -->
+              <div class="my-auto pt-1">
+                <h3 class="font-michroma font-extrabold text-base sm:text-xl text-white tracking-tight leading-snug drop-shadow-md">
+                  DAPATKAN PROMO<br>SEKARANG!
+                </h3>
+              </div>
+
+              <!-- Footer (Venue & Dates) -->
+              <div class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-slate-300/90">
+                GADING SERPONG · EDISI TERBATAS
+              </div>
+
+            </div>
+
+            <!-- Stub Text on Right Side -->
+            <div class="absolute right-0 top-0 bottom-0 w-[24.2%] flex items-center justify-center font-michroma font-bold text-[10px] sm:text-xs text-white tracking-widest uppercase pointer-events-none z-20" style="writing-mode: vertical-rl;">
+              ADMIT ONE
+            </div>
+
+            <!-- Glare Reflection Overlay Effect -->
+            <div id="ticket-glare-effect" class="absolute inset-0 pointer-events-none transition-opacity duration-300 opacity-0 z-30" style="background: radial-gradient(38% 55% at 50% 50%, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 70%);"></div>
+
+          </div>
+
+        </div>
+
+        <!-- Dynamic Action Buttons Below Ticket Pass -->
+        <div class="w-full max-w-[380px] grid grid-cols-2 gap-3 mt-4">
+          <!-- WhatsApp Green Button -->
+          <button onclick="openWhatsApp('Halo, saya mau klaim Promo Pass Eksklusif Geely Gading Serpong 2026!')" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3.5 px-3 rounded-full text-xs sm:text-sm transition-all shadow-md flex items-center justify-center space-x-1.5 active:scale-95">
+            <i class="fa-brands fa-whatsapp text-base"></i>
+            <span>WhatsApp</span>
+          </button>
+          <!-- Test Drive White Button -->
+          <button onclick="openTestDriveModal()" class="w-full bg-white hover:bg-slate-50 text-slate-900 border border-slate-200 font-bold py-3.5 px-3 rounded-full text-xs sm:text-sm transition-all shadow-sm flex items-center justify-center active:scale-95">
+            Test Drive
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== OWNERSHIP SUPPORT SECTION (MINIMALIST STROKE LINE STYLE) ==================== -->
+    <section class="px-4 mb-6">
+      <div class="border-y border-slate-300/50 py-6 px-1 my-2">
+        
+        <div class="font-michroma text-[9px] font-bold tracking-widest text-slate-400 uppercase mb-1">
+          SUPPORT
+        </div>
+        <h2 class="font-michroma font-bold text-lg sm:text-xl text-slate-900 tracking-tight mb-1">
+          Ownership support
+        </h2>
+        <p class="text-xs text-slate-600 leading-relaxed mb-5">
+          Layanan purna jual resmi Geely Gading Serpong untuk kenyamanan berkendara Anda.
+        </p>
+
+        <!-- 2x2 Grid Support Items with Minimalist Stroke Line Style -->
+        <div class="grid grid-cols-2 gap-2.5">
+
+          <!-- Card 1: On-demand -->
+          <div class="border border-slate-300/70 hover:border-slate-900/60 rounded-2xl p-3.5 flex items-center space-x-3 transition-all bg-transparent">
+            <div class="w-8 h-8 rounded-full border border-slate-300/90 text-slate-800 flex items-center justify-center text-xs shrink-0">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <span class="text-xs font-bold text-slate-900 leading-tight">On-demand</span>
+          </div>
+
+          <!-- Card 2: Service & warranty -->
+          <div class="border border-slate-300/70 hover:border-slate-900/60 rounded-2xl p-3.5 flex items-center space-x-3 transition-all bg-transparent">
+            <div class="w-8 h-8 rounded-full border border-slate-300/90 text-slate-800 flex items-center justify-center text-xs shrink-0">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <span class="text-xs font-bold text-slate-900 leading-tight">Service & warranty</span>
+          </div>
+
+          <!-- Card 3: Financing -->
+          <div class="border border-slate-300/70 hover:border-slate-900/60 rounded-2xl p-3.5 flex items-center space-x-3 transition-all bg-transparent">
+            <div class="w-8 h-8 rounded-full border border-slate-300/90 text-slate-800 flex items-center justify-center text-xs shrink-0">
+              <i class="fa-solid fa-credit-card"></i>
+            </div>
+            <span class="text-xs font-bold text-slate-900 leading-tight">Financing</span>
+          </div>
+
+          <!-- Card 4: Spareparts -->
+          <div class="border border-slate-300/70 hover:border-slate-900/60 rounded-2xl p-3.5 flex items-center space-x-3 transition-all bg-transparent">
+            <div class="w-8 h-8 rounded-full border border-slate-300/90 text-slate-800 flex items-center justify-center text-xs shrink-0">
+              <i class="fa-solid fa-box-archive"></i>
+            </div>
+            <span class="text-xs font-bold text-slate-900 leading-tight">Spareparts</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== FOOTER DEALER LOCATION & CONTACT CARD ==================== -->
+    <footer class="px-4 mb-4">
+      <div class="bg-[#0A101D] text-white rounded-[32px] p-5 sm:p-6 shadow-2xl relative overflow-hidden">
+        
+        <!-- WebGL Shader Dither Background -->
+        <div id="footer-shader-mount" class="absolute inset-0 w-full h-full bg-[#0f172a] pointer-events-none"></div>
+
+        <!-- Footer Content Overlay -->
+        <div class="relative z-10">
+          <!-- Header Dealer -->
+          <div class="flex justify-between items-start mb-3">
+            <div>
+              <div class="flex items-center space-x-2 mb-1">
+                <img src="assets/logo-geely-white.svg" alt="Geely" class="h-3.5 w-auto">
+                <span class="font-michroma font-bold text-sm text-white">Gading Serpong</span>
+              </div>
+              <p class="text-[11px] text-slate-400 leading-snug pr-4">
+                Jl. Scientia Blvd, Medang, Kec. Pagedangan, Kab. Tangerang, Banten 15334
+              </p>
+            </div>
+          </div>
+
+          <!-- Instagram Account Buttons Only (No Title Header) -->
+          <div class="my-4 pt-3 border-t border-slate-800/80">
+            <div class="grid grid-cols-2 gap-2">
+              <a href="https://www.instagram.com/mimosagrup" target="_blank" rel="noopener noreferrer" class="bg-slate-900/90 hover:bg-slate-800 text-slate-200 border border-slate-800 rounded-xl px-3 py-2 text-xs flex items-center space-x-2 transition-all hover:border-rose-500/50 group shadow-sm">
+                <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 flex items-center justify-center text-white shrink-0 text-[10px]">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <span class="font-semibold truncate text-[11px] group-hover:text-white">@mimosagrup</span>
+              </a>
+
+              <a href="https://www.instagram.com/mimosageely" target="_blank" rel="noopener noreferrer" class="bg-slate-900/90 hover:bg-slate-800 text-slate-200 border border-slate-800 rounded-xl px-3 py-2 text-xs flex items-center space-x-2 transition-all hover:border-rose-500/50 group shadow-sm">
+                <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 flex items-center justify-center text-white shrink-0 text-[10px]">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <span class="font-semibold truncate text-[11px] group-hover:text-white">@mimosageely</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Google Map Embed Frame -->
+          <div class="relative w-full h-36 rounded-2xl overflow-hidden my-4 border border-slate-800 bg-slate-900 shadow-inner">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.027017772659!2d106.6138652!3d-6.2601056!2m3!100!0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb7a7dd32bbd%3A0x6b816086fcf37ef6!2sJl.%20Scientia%20Blvd%2C%20Medang%2C%20Kec.%20Pagedangan%2C%20Kabupaten%20Tangerang%2C%20Banten%2015334!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              class="opacity-90 hover:opacity-100 transition-opacity">
+            </iframe>
+          </div>
+
+          <!-- Footer Action Buttons -->
+          <div class="space-y-2.5">
+            <!-- Get Directions Button -->
+            <a href="https://maps.app.goo.gl/ew7XKDNuPhyXzP5s6?g_st=aw" target="_blank" rel="noopener noreferrer" class="w-full bg-white hover:bg-slate-100 text-slate-900 font-bold py-2.5 px-4 rounded-full text-xs transition-all flex items-center justify-center space-x-2 shadow">
+              <i class="fa-solid fa-location-dot text-rose-500"></i>
+              <span>Get Direction</span>
+            </a>
+
+            <div class="grid grid-cols-2 gap-2">
+              <!-- WhatsApp Button -->
+              <button onclick="openWhatsApp('Halo, saya ingin menanyakan lokasi dan jadwal kunjungan dealer Geely Gading Serpong.')" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2.5 px-3 rounded-full text-xs transition-all flex items-center justify-center space-x-1.5 shadow">
+                <i class="fa-brands fa-whatsapp text-sm"></i>
+                <span>WhatsApp</span>
+              </button>
+
+              <!-- Test Drive Button -->
+              <button onclick="openTestDriveModal()" class="w-full bg-transparent hover:bg-slate-800 text-white border border-slate-700 font-bold py-2.5 px-3 rounded-full text-xs transition-all flex items-center justify-center shadow">
+                Test Drive
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+
+  <!-- ==================== DESKTOP VIEW CONTAINER (3 STICKY MAGNET SCENES) ==================== -->
+  <div class="hidden md:block h-screen w-full overflow-y-scroll snap-y snap-mandatory scroll-smooth no-scrollbar bg-slate-950 text-slate-900 selection:bg-emerald-500 selection:text-white" id="desktop-app-container">
+
+    <!-- ==================== SCENE 1: DESKTOP HERO SCENE ==================== -->
+    <section id="desktop-scene-hero" class="h-screen w-full snap-start relative overflow-hidden flex flex-col justify-between p-8 lg:p-12 text-white bg-slate-950">
+      
+      <!-- Background Video (Landscape Desktop Version) -->
+      <video 
+        id="desktop-hero-bg-video" 
+        autoplay 
+        muted 
+        loop 
+        playsinline 
+        poster="assets/hero-image-desktop.jpeg"
+        class="absolute inset-0 w-full h-full object-cover pointer-events-none opacity-0 transition-opacity duration-1000 z-0"
+        oncanplay="this.classList.remove('opacity-0'); this.classList.add('opacity-100');"
+        onplaying="this.classList.remove('opacity-0'); this.classList.add('opacity-100');">
+        <source src="assets/hero-video-desktop.mp4" type="video/mp4">
+      </video>
+
+      <!-- Soft Ambient Gradient Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/25 to-slate-950/60 pointer-events-none z-[1]"></div>
+
+      <!-- Scene Content Overlay -->
+      <div class="relative z-10 w-full h-full flex flex-col justify-between">
+        
+        <!-- Top Nav Bar -->
+        <div class="flex justify-between items-center w-full">
+          <div class="flex items-center space-x-3">
+            <img src="assets/logo-geely-white.svg" alt="Geely Auto Logo" class="h-6 w-auto drop-shadow-md">
+            <span class="font-michroma font-bold text-sm text-slate-200 tracking-wider">GADING SERPONG</span>
+          </div>
+          <div class="flex items-center space-x-8">
+            <a href="#desktop-scene-hero" class="text-xs font-bold text-white hover:text-emerald-400 transition font-michroma uppercase tracking-widest">Hero</a>
+            <a href="#desktop-scene-product" class="text-xs font-bold text-slate-300 hover:text-white transition font-michroma uppercase tracking-widest">Product</a>
+            <a href="#desktop-scene-contact" class="text-xs font-bold text-slate-300 hover:text-white transition font-michroma uppercase tracking-widest">Contact</a>
+            <img src="assets/mimosa_logo.png" alt="Mimosa Logo" class="h-7 w-auto object-contain drop-shadow-md ml-4">
+          </div>
+        </div>
+
+        <!-- Middle Hero Main Title -->
+        <div class="my-auto max-w-3xl">
+          <h1 class="font-michroma font-bold text-4xl lg:text-6xl text-white tracking-tight leading-[1.15] drop-shadow-2xl hero-reveal-title">
+            Promo Geely<br>
+            Gading Serpong<br>
+            2026
+          </h1>
+        </div>
+
+        <!-- Bottom Description & Action Buttons -->
+        <div class="flex justify-between items-end w-full pb-2">
+          <!-- Left: Subtitle Description -->
+          <p class="text-xs lg:text-sm text-slate-200 leading-relaxed font-normal max-w-[480px] text-left drop-shadow-md">
+            Rasakan sensasi berkendara futuristik bersama jajaran mobil listrik & hybrid Geely terbaru 2026. Dapatkan promo eksklusif & pelayanan resmi terbaik di Gading Serpong.
+          </p>
+
+          <!-- Right: Hero Action Buttons -->
+          <div class="flex items-center space-x-4">
+            <button onclick="openTestDriveModal()" class="bg-white hover:bg-slate-100 text-slate-900 font-bold py-3.5 px-8 rounded-full text-xs lg:text-sm transition-all duration-200 shadow-xl active:scale-95 flex items-center justify-center">
+              Test Drive
+            </button>
+            <button onclick="openWhatsApp()" class="bg-[#22C55E] hover:bg-emerald-600 text-white font-bold py-3.5 px-8 rounded-full text-xs lg:text-sm transition-all duration-200 shadow-xl glow-green active:scale-95 flex items-center justify-center space-x-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Whatsapp</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==================== SCENE 2: DESKTOP PRODUCT SCENE (SPLIT 60% LEFT / 40% RIGHT) ==================== -->
+    <section id="desktop-scene-product" class="h-screen w-full snap-start relative overflow-hidden bg-[#F3F4F6] p-6 lg:p-10 flex flex-col justify-between">
+      
+      <!-- Top Tag Header -->
+      <div class="font-michroma text-xs font-bold tracking-widest text-slate-400 uppercase mb-2">
+        PILIH TIPE MOBIL
+      </div>
+
+      <!-- Split Layout Grid (60% Left / 40% Right) -->
+      <div class="grid grid-cols-12 gap-8 h-[calc(100vh-110px)] items-stretch">
+        
+        <!-- Left Column 60% (col-span-7): Active Title, Car Cutout & 4 Minimalist HUD Stroke Card Buttons -->
+        <div class="col-span-7 flex flex-col justify-between h-full py-1">
+          
+          <!-- Active Model Navigation Header -->
+          <div class="flex justify-between items-center px-2 mb-2">
+            <button id="desktop-btn-prev-model" onclick="prevModel()" class="w-10 h-10 rounded-full bg-white/90 backdrop-blur-md border border-slate-300 shadow-md flex items-center justify-center text-slate-700 hover:bg-slate-50 active:scale-90 transition-all">
+              <i class="fa-solid fa-chevron-left text-sm"></i>
+            </button>
+
+            <h2 id="desktop-active-model-name" class="font-michroma font-bold text-2xl lg:text-3xl text-slate-900 tracking-tight text-center">
+              Geely Starray EM-i
+            </h2>
+
+            <button id="desktop-btn-next-model" onclick="nextModel()" class="w-10 h-10 rounded-full bg-white/90 backdrop-blur-md border border-slate-300 shadow-md flex items-center justify-center text-slate-700 hover:bg-slate-50 active:scale-90 transition-all">
+              <i class="fa-solid fa-chevron-right text-sm"></i>
+            </button>
+          </div>
+
+          <!-- Showcase Car Cutout Image -->
+          <div class="car-image-container flex-grow flex items-center justify-center py-2 relative">
+            <img id="desktop-active-car-img" src="assets/Geely-starray-em-i.png" alt="Geely Active Model" class="max-h-[46vh] max-w-full object-contain drop-shadow-2xl transition-transform duration-300 hover:scale-105">
+          </div>
+
+          <!-- 4 Model Tab Card Buttons (Minimalist HUD Stroke Style - No White Fill) -->
+          <div class="grid grid-cols-4 gap-3 mt-2">
+            
+            <button onclick="selectModel(0)" class="desktop-model-tab model-tab rounded-2xl p-3 flex flex-col items-center justify-between border border-slate-300/80 backdrop-blur-sm transition-all duration-200 cursor-pointer text-center bg-transparent text-slate-700 hover:border-slate-900 hover:shadow-md">
+              <div class="text-xs font-bold tracking-tight mb-1 truncate w-full font-michroma">STARRAY EM-i</div>
+              <div class="h-12 w-full flex items-center justify-center overflow-hidden">
+                <img src="assets/Geely-starray-em-i.png" alt="STARRAY EM-i" class="max-h-full max-w-full object-contain">
+              </div>
+            </button>
+
+            <button onclick="selectModel(1)" class="desktop-model-tab model-tab rounded-2xl p-3 flex flex-col items-center justify-between border border-slate-300/80 backdrop-blur-sm transition-all duration-200 cursor-pointer text-center bg-transparent text-slate-700 hover:border-slate-900 hover:shadow-md">
+              <div class="text-xs font-bold tracking-tight mb-1 truncate w-full font-michroma">EX2 EV</div>
+              <div class="h-12 w-full flex items-center justify-center overflow-hidden">
+                <img src="assets/Geely-EX2.png" alt="EX2 EV" class="max-h-full max-w-full object-contain">
+              </div>
+            </button>
+
+            <button onclick="selectModel(2)" class="desktop-model-tab model-tab rounded-2xl p-3 flex flex-col items-center justify-between border border-slate-300/80 backdrop-blur-sm transition-all duration-200 cursor-pointer text-center bg-transparent text-slate-700 hover:border-slate-900 hover:shadow-md">
+              <div class="text-xs font-bold tracking-tight mb-1 truncate w-full font-michroma">COOLRAY</div>
+              <div class="h-12 w-full flex items-center justify-center overflow-hidden">
+                <img src="assets/Geely-Coolray.png" alt="COOLRAY" class="max-h-full max-w-full object-contain">
+              </div>
+            </button>
+
+            <button onclick="selectModel(3)" class="desktop-model-tab model-tab rounded-2xl p-3 flex flex-col items-center justify-between border border-slate-300/80 backdrop-blur-sm transition-all duration-200 cursor-pointer text-center bg-transparent text-slate-700 hover:border-slate-900 hover:shadow-md">
+              <div class="text-xs font-bold tracking-tight mb-1 truncate w-full font-michroma">EX5 EV</div>
+              <div class="h-12 w-full flex items-center justify-center overflow-hidden">
+                <img src="assets/Geely-EX5.png" alt="EX5 EV" class="max-h-full max-w-full object-contain">
+              </div>
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- Right Column 40% (col-span-5): Price, 3 Key Specs, Accordion Specs & Gallery (FULL HEIGHT) -->
+        <div class="col-span-5 h-full py-1">
+          <div class="bg-white rounded-[32px] p-6 shadow-2xl border border-slate-200/80 h-full flex flex-col justify-between overflow-y-auto no-scrollbar space-y-4">
+            
+            <!-- Price Tag -->
+            <div class="text-center">
+              <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 font-michroma">HARGA MULAI DARI</div>
+              <div id="desktop-active-car-price" class="font-michroma font-bold text-3xl lg:text-4xl text-slate-900 tracking-tight mt-1">
+                Rp498.000.000
+              </div>
+            </div>
+
+            <!-- 3 Key Specs Highlight Grid -->
+            <div id="desktop-active-key-highlights" class="grid grid-cols-3 divide-x divide-slate-300/80 py-3 border-y border-slate-200">
+              <!-- Dynamically populated by script.js -->
+            </div>
+
+            <!-- Spec Details Accordion Container -->
+            <div id="desktop-spec-details-container" class="space-y-4 max-h-[35vh] overflow-y-auto pr-1 no-scrollbar flex-grow">
+              <!-- Dynamically populated by script.js -->
+            </div>
+
+            <!-- Gallery Carousel Photos -->
+            <div class="pt-2 border-t border-slate-100">
+              <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-2 font-michroma">GALERI FOTO</div>
+              <div id="desktop-model-gallery-container" class="flex overflow-x-auto snap-x snap-mandatory gap-3 no-scrollbar py-1">
+                <!-- Dynamically populated by script.js -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==================== SCENE 3: DESKTOP CONTACT SCENE ==================== -->
+    <section id="desktop-scene-contact" class="h-screen w-full snap-start relative overflow-hidden bg-[#F3F4F6] p-6 lg:p-10 flex flex-col justify-between text-slate-900">
+      
+      <!-- Full Screen Dots Pattern Texture Overlay -->
+      <div class="absolute inset-0 pointer-events-none opacity-25 z-0" style="background-image: radial-gradient(#64748b 1px, transparent 1px); background-size: 12px 12px;"></div>
+
+      <!-- Top Tag Header -->
+      <div class="relative z-10 font-michroma text-xs font-bold tracking-widest text-slate-400 uppercase mb-2">
+        HUBUNGI KAMI & LOKASI DEALER
+      </div>
+
+      <!-- Centered 3-Column Layout with Natural Mobile Proportions -->
+      <div class="relative z-10 max-w-6xl mx-auto my-auto w-full grid grid-cols-12 gap-8 items-center justify-center">
+
+        <!-- Column 1: Toto Kusumah Profile & Consultation (Natural Mobile Proportion - No Outer Card Box) -->
+        <div class="col-span-4 flex flex-col justify-center items-center">
+          <div class="w-full max-w-[340px] mx-auto">
+            
+            <!-- Floating Layered Stacked Container -->
+            <div class="relative w-full max-w-[320px] mx-auto my-4 pt-3 pb-4">
+
+              <!-- Element 1: Floating Name & Status Card -->
+              <div class="absolute -top-4 -left-2 z-20 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-2xl shadow-xl border border-slate-200/80 flex items-center space-x-2.5 animate-float">
+                <div class="w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-xs shrink-0 shadow">
+                  <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div>
+                  <h4 class="font-michroma font-bold text-xs text-slate-900 leading-none">Toto Kusumah</h4>
+                  <span class="text-[9px] font-semibold text-slate-500">Sales Official Geely</span>
+                </div>
+              </div>
+
+              <!-- Element 2: 3D Flip Profile Image Card -->
+              <div class="flip-card-container w-full h-[340px] rounded-[28px] cursor-pointer select-none relative z-10" onclick="this.classList.toggle('flipped')">
+                <div class="flip-card-inner relative w-full h-full">
+                  
+                  <!-- Front Side: Photo of Toto Kusumah -->
+                  <div class="flip-card-front absolute inset-0 w-full h-full rounded-[28px] overflow-hidden bg-slate-100 shadow-xl border border-slate-200/60">
+                    <img src="assets/totokusumahprofile.png" alt="Toto Kusumah Sales Official Geely" class="w-full h-full object-cover">
+                    <!-- Hint Badge -->
+                    <div class="absolute bottom-3 left-1/2 -translate-x-1/2 bg-slate-900/80 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1 rounded-full border border-slate-700/80 flex items-center space-x-1.5 shadow pointer-events-none">
+                      <i class="fa-solid fa-rotate text-xs"></i>
+                      <span>Hover / Tap untuk info</span>
+                    </div>
+                  </div>
+
+                  <!-- Back Side: Solid Black Background + Instagram Button -->
+                  <div class="flip-card-back absolute inset-0 w-full h-full rounded-[28px] overflow-hidden bg-black text-white p-5 flex flex-col justify-center items-center text-center shadow-2xl border border-neutral-800">
+                    <div class="w-14 h-14 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center justify-center text-2xl mb-3 shadow-inner">
+                      <i class="fa-solid fa-user-check"></i>
+                    </div>
+                    <h4 class="font-michroma font-bold text-sm text-white tracking-wide mb-1">
+                      Official Geely Sales
+                    </h4>
+                    <p class="text-xs text-neutral-400 leading-relaxed mb-5 max-w-[200px]">
+                      Toto Kusumah
+                    </p>
+                    <a href="https://www.instagram.com/geely.toto/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 bg-gradient-to-r from-amber-500 via-rose-500 to-purple-600 hover:opacity-95 text-white font-bold px-5 py-2.5 rounded-full text-xs transition-all shadow-lg active:scale-95" onclick="event.stopPropagation()">
+                      <i class="fa-brands fa-instagram text-sm"></i>
+                      <span>@geely.toto</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Element 3: Floating Icon Badge Verification -->
+              <div class="absolute -bottom-3 -right-2 z-20 bg-slate-900/95 text-white backdrop-blur-md px-3.5 py-2 rounded-full shadow-2xl border border-slate-800 flex items-center space-x-2 text-[11px] font-bold">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
+                <span>Verified Official</span>
+              </div>
+
+            </div>
+
+            <!-- Consultation Content Below Stacked Cards -->
+            <div class="pt-3 text-center">
+              <h3 class="font-michroma font-bold text-xs lg:text-sm text-slate-900 leading-snug mb-1">
+                Konsultasi Penawaran Terbaik bersama Toto Kusumah
+              </h3>
+              <p class="text-[11px] text-slate-600 leading-relaxed">
+                Dapatkan info promo terbaru, hitungan kredit sesuai budget, trade-in harga terbaik, dan pelayanan terbaik unit Geely langsung ke lokasi Anda.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Column 2: Admit One Ticket Pass (Natural Mobile Proportion - No Outer Card Box) -->
+        <div class="col-span-4 flex flex-col justify-center items-center">
+          <div class="w-full max-w-[340px] mx-auto">
+            
+            <!-- SVG Defs for Ticket Clip-Path -->
+            <svg width="0" height="0" class="absolute pointer-events-none">
+              <defs>
+                <clipPath id="desktop-ticket-clip-shape" clipPathUnits="objectBoundingBox">
+                  <path d="M 0.0337,0 L 0.7301,0 A 0.0283,0.0494 0 0,0 0.7867,0 L 0.9663,0 A 0.0337,0.0588 0 0,1 1,0.0588 L 1,0.9412 A 0.0337,0.0588 0 0,1 0.9663,1 L 0.7867,1 A 0.0283,0.0494 0 0,0 0.7301,1 L 0.0337,1 A 0.0337,0.0588 0 0,1 0,0.9412 L 0,0.0588 A 0.0337,0.0588 0 0,1 0.0337,0 Z" />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <!-- Interactive 3D Tilt Ticket Wrapper -->
+            <div id="desktop-ticket-tilt-wrapper" class="relative w-full cursor-pointer select-none transition-transform duration-300 ease-out will-change-transform" style="transform-style: preserve-3d;">
+              
+              <!-- Admit One Ticket Card Container with SVG Clip-Path -->
+              <div id="desktop-ticket-card-container" class="relative w-full aspect-[741/425] shadow-2xl overflow-hidden" style="clip-path: url(#desktop-ticket-clip-shape); -webkit-clip-path: url(#desktop-ticket-clip-shape);">
+                
+                <!-- WebGL Canvas Shader Background Mount -->
+                <div id="desktop-ticket-shader-mount" class="absolute inset-0 w-full h-full bg-[#0f172a]"></div>
+
+                <!-- Perforation Line -->
+                <div class="absolute top-0 bottom-0 left-[75.8%] w-[2px] border-r-2 border-dashed border-white/25 pointer-events-none z-10"></div>
+
+                <!-- Watermark Text on Stub -->
+                <div class="absolute right-0 top-0 bottom-0 w-[24.2%] flex items-center justify-center font-bold text-white/20 text-3xl tracking-tighter select-none pointer-events-none z-10" style="writing-mode: vertical-rl;">
+                  2026
+                </div>
+
+                <!-- Ticket Content Overlay Layer -->
+                <div class="absolute inset-0 p-4 flex flex-col justify-between text-white font-sans z-20 pointer-events-none">
+                  <div>
+                    <div class="text-[8px] lg:text-[9px] font-extrabold uppercase tracking-wider text-slate-300/90 leading-tight font-michroma">
+                      GEELY GADING SERPONG PRESENTS
+                    </div>
+                    <div class="text-[9px] lg:text-[10px] font-black uppercase tracking-widest text-white leading-tight font-michroma">
+                      PROMO SPESIAL 2026
+                    </div>
+                  </div>
+
+                  <div class="my-auto pt-1">
+                    <h3 class="font-michroma font-extrabold text-sm lg:text-base text-white tracking-tight leading-snug drop-shadow-md">
+                      DAPATKAN PROMO<br>SEKARANG!
+                    </h3>
+                  </div>
+
+                  <div class="text-[8px] lg:text-[9px] font-bold uppercase tracking-wider text-slate-300/90 font-michroma">
+                    GADING SERPONG · EDISI TERBATAS
+                  </div>
+                </div>
+
+                <!-- Stub Text on Right Side -->
+                <div class="absolute right-0 top-0 bottom-0 w-[24.2%] flex items-center justify-center font-michroma font-bold text-[9px] text-white tracking-widest uppercase pointer-events-none z-20" style="writing-mode: vertical-rl;">
+                  ADMIT ONE
+                </div>
+
+                <!-- Glare Reflection Overlay Effect -->
+                <div id="desktop-ticket-glare-effect" class="absolute inset-0 pointer-events-none transition-opacity duration-300 opacity-0 z-30" style="background: radial-gradient(38% 55% at 50% 50%, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 70%);"></div>
+
+              </div>
+
+            </div>
+
+            <!-- Action Buttons Below Ticket -->
+            <div class="w-full grid grid-cols-2 gap-3 mt-4">
+              <button onclick="openWhatsApp('Halo, saya mau klaim Promo Pass Eksklusif Geely Gading Serpong 2026!')" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3.5 px-3 rounded-full text-xs transition-all shadow-md flex items-center justify-center space-x-1.5 active:scale-95">
+                <i class="fa-brands fa-whatsapp text-base"></i>
+                <span>WhatsApp</span>
+              </button>
+              <button onclick="openTestDriveModal()" class="w-full bg-white hover:bg-slate-50 text-slate-900 border border-slate-200 font-bold py-3.5 px-3 rounded-full text-xs transition-all shadow-sm flex items-center justify-center active:scale-95">
+                Test Drive
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Column 3: Ownership Support Section & Footer Location Card -->
+        <div class="col-span-4 flex flex-col justify-center space-y-5">
+          
+          <!-- Top Component: Ownership Support (Minimalist Stroke Line Style - No Outer Box Container) -->
+          <div class="w-full max-w-[360px] mx-auto border-y border-slate-300/60 py-4 px-1">
+            <div class="font-michroma text-[9px] font-bold tracking-widest text-slate-400 uppercase mb-1">
+              SUPPORT
+            </div>
+            <h2 class="font-michroma font-bold text-base text-slate-900 tracking-tight mb-1">
+              Ownership support
+            </h2>
+            <p class="text-[11px] text-slate-600 leading-relaxed mb-3">
+              Layanan purna jual resmi Geely Gading Serpong untuk kenyamanan berkendara Anda.
+            </p>
+
+            <div class="grid grid-cols-2 gap-2">
+              <div class="border border-slate-300/70 hover:border-slate-900/60 rounded-xl p-2.5 flex items-center space-x-2 transition-all bg-transparent">
+                <div class="w-7 h-7 rounded-full border border-slate-300/90 text-slate-800 flex items-center justify-center text-[10px] shrink-0">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <span class="text-xs font-bold text-slate-900 leading-tight">On-demand</span>
+              </div>
+
+              <div class="border border-slate-300/70 hover:border-slate-900/60 rounded-xl p-2.5 flex items-center space-x-2 transition-all bg-transparent">
+                <div class="w-7 h-7 rounded-full border border-slate-300/90 text-slate-800 flex items-center justify-center text-[10px] shrink-0">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <span class="text-xs font-bold text-slate-900 leading-tight">Service & warranty</span>
+              </div>
+
+              <div class="border border-slate-300/70 hover:border-slate-900/60 rounded-xl p-2.5 flex items-center space-x-2 transition-all bg-transparent">
+                <div class="w-7 h-7 rounded-full border border-slate-300/90 text-slate-800 flex items-center justify-center text-[10px] shrink-0">
+                  <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <span class="text-xs font-bold text-slate-900 leading-tight">Financing</span>
+              </div>
+
+              <div class="border border-slate-300/70 hover:border-slate-900/60 rounded-xl p-2.5 flex items-center space-x-2 transition-all bg-transparent">
+                <div class="w-7 h-7 rounded-full border border-slate-300/90 text-slate-800 flex items-center justify-center text-[10px] shrink-0">
+                  <i class="fa-solid fa-box-archive"></i>
+                </div>
+                <span class="text-xs font-bold text-slate-900 leading-tight">Spareparts</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Component: Footer Dealer Location Card -->
+          <div class="w-full max-w-[360px] mx-auto bg-[#0A101D] text-white rounded-[28px] p-5 shadow-2xl relative overflow-hidden">
+            <div id="desktop-footer-shader-mount" class="absolute inset-0 w-full h-full bg-[#0f172a] pointer-events-none"></div>
+
+            <div class="relative z-10 flex flex-col justify-between space-y-3">
+              <div>
+                <div class="flex items-center space-x-2 mb-1">
+                  <img src="assets/logo-geely-white.svg" alt="Geely" class="h-3.5 w-auto">
+                  <span class="font-michroma font-bold text-xs text-white">Gading Serpong</span>
+                </div>
+                <p class="text-[10px] text-slate-400 leading-snug">
+                  Jl. Scientia Blvd, Medang, Pagedangan, Kab. Tangerang, Banten 15334
+                </p>
+              </div>
+
+              <!-- Instagram Account Buttons -->
+              <div class="grid grid-cols-2 gap-2">
+                <a href="https://www.instagram.com/mimosagrup" target="_blank" rel="noopener noreferrer" class="bg-slate-900/90 hover:bg-slate-800 text-slate-200 border border-slate-800 rounded-xl px-2.5 py-1.5 text-[10px] flex items-center space-x-1.5 transition-all">
+                  <div class="w-5 h-5 rounded-full bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 flex items-center justify-center text-white shrink-0 text-[9px]">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <span class="font-semibold truncate text-[10px]">@mimosagrup</span>
+                </a>
+
+                <a href="https://www.instagram.com/mimosageely" target="_blank" rel="noopener noreferrer" class="bg-slate-900/90 hover:bg-slate-800 text-slate-200 border border-slate-800 rounded-xl px-2.5 py-1.5 text-[10px] flex items-center space-x-1.5 transition-all">
+                  <div class="w-5 h-5 rounded-full bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 flex items-center justify-center text-white shrink-0 text-[9px]">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <span class="font-semibold truncate text-[10px]">@mimosageely</span>
+                </a>
+              </div>
+
+              <!-- Map Embed Frame -->
+              <div class="relative w-full h-24 rounded-xl overflow-hidden border border-slate-800 bg-slate-950">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.027017772659!2d106.6138652!3d-6.2601056!2m3!100!0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb7a7dd32bbd%3A0x6b816086fcf37ef6!2sJl.%20Scientia%20Blvd%2C%20Medang%2C%20Kec.%20Pagedangan%2C%20Kabupaten%20Tangerang%2C%20Banten%2015334!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  class="opacity-90 hover:opacity-100 transition-opacity">
+                </iframe>
+              </div>
+
+              <!-- Single Action Button (Get Direction Only - WhatsApp & Test Drive buttons removed as requested) -->
+              <a href="https://maps.app.goo.gl/ew7XKDNuPhyXzP5s6?g_st=aw" target="_blank" rel="noopener noreferrer" class="w-full bg-white hover:bg-slate-100 text-slate-900 font-bold py-2.5 px-4 rounded-full text-xs transition-all flex items-center justify-center space-x-2 shadow">
+                <i class="fa-solid fa-location-dot text-rose-500"></i>
+                <span>Get Direction</span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- ==================== FULLSCREEN GALLERY LIGHTBOX CAROUSEL MODAL ==================== -->
+  <div id="gallery-lightbox" class="fixed inset-0 z-50 hidden items-center justify-center p-3 modal-backdrop bg-slate-950/90" onclick="closeLightbox()">
+    <div class="relative max-w-lg w-full bg-slate-900 rounded-3xl overflow-hidden p-3 shadow-2xl border border-slate-800 flex flex-col items-center justify-center" onclick="event.stopPropagation()">
+      
+      <!-- Close Button -->
+      <button onclick="closeLightbox()" class="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-slate-800/90 text-white hover:bg-slate-700 flex items-center justify-center shadow-lg transition">
+        <i class="fa-solid fa-xmark text-sm"></i>
+      </button>
+
+      <!-- Counter Badge -->
+      <div id="lightbox-counter" class="absolute top-4 left-4 z-20 bg-slate-800/90 text-slate-200 text-[11px] font-bold px-3 py-1 rounded-full border border-slate-700 font-michroma">
+        1 / 8
+      </div>
+
+      <!-- Main Image Display with Left/Right Navigation Arrows -->
+      <div class="relative w-full h-[65vh] flex items-center justify-center bg-slate-950 rounded-2xl overflow-hidden my-2">
+        <img id="lightbox-img" src="" alt="Geely Gallery Photo" class="max-w-full max-h-full object-contain transition-all duration-300">
+
+        <!-- Left Nav Arrow -->
+        <button id="lightbox-prev" onclick="prevLightboxImg(event)" class="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900/80 hover:bg-slate-800 text-white border border-slate-700 flex items-center justify-center shadow-lg active:scale-90 transition-all z-10">
+          <i class="fa-solid fa-chevron-left text-sm"></i>
+        </button>
+
+        <!-- Right Nav Arrow -->
+        <button id="lightbox-next" onclick="nextLightboxImg(event)" class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900/80 hover:bg-slate-800 text-white border border-slate-700 flex items-center justify-center shadow-lg active:scale-90 transition-all z-10">
+          <i class="fa-solid fa-chevron-right text-sm"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ==================== TEST DRIVE & CONSULTATION MODAL ==================== -->
+  <div id="test-drive-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-backdrop bg-slate-950/70">
+    <div class="bg-white w-full max-w-sm rounded-[32px] p-6 shadow-2xl relative border border-slate-100 animate-in fade-in zoom-in duration-200">
+      
+      <!-- Close Button -->
+      <button onclick="closeTestDriveModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 text-slate-500 hover:text-slate-800 flex items-center justify-center transition">
+        <i class="fa-solid fa-xmark text-sm"></i>
+      </button>
+
+      <div class="text-center mb-5">
+        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-3 text-xl">
+          <i class="fa-solid fa-car"></i>
+        </div>
+        <h3 class="font-michroma font-bold text-base text-slate-900">Form Test Drive Geely</h3>
+        <p class="text-xs text-slate-500">Isi data di bawah ini untuk jadwal test drive resmi</p>
+      </div>
+
+      <form id="test-drive-form" class="space-y-3.5">
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Nama Lengkap</label>
+          <input type="text" id="modal-name" required placeholder="Contoh: Budi Santoso" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500">
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Nomor WhatsApp</label>
+          <input type="tel" id="modal-phone" required placeholder="Contoh: 081234567890" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500">
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Pilih Unit Geely</label>
+          <select id="modal-car-select" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 bg-white">
+            <option value="Geely Starray EM-i">Geely Starray EM-i</option>
+            <option value="Geely EX5 EV">Geely EX5 EV</option>
+            <option value="Geely EX2 EV">Geely EX2 EV</option>
+            <option value="Geely Coolray">Geely Coolray</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Rencana Tanggal</label>
+          <input type="date" id="modal-date" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 bg-white">
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Catatan Tambahan (Opsional)</label>
+          <input type="text" id="modal-note" placeholder="Contoh: Test drive ke rumah / kantor" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500">
+        </div>
+
+        <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 rounded-full text-xs transition-all shadow-lg flex items-center justify-center space-x-2 mt-2">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>Kirim pendaftaran via WhatsApp</span>
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+
+  <!-- Main App Script -->
+  <script src="script.js?v=2"></script>
+</body>
+</html>
