@@ -2,6 +2,150 @@
 
 const carModels = [
   {
+    id: "ex5",
+    tag: "EX5 EV",
+    name: "Geely EX5 EV",
+    shortName: "Geely EX5 EV",
+    price: "Rp458.000.000",
+    image: "assets/Geely-EX5.webp",
+    thumb: "assets/Geely-EX5.webp",
+    bgClass: "bg-slate-900",
+    description: "Premium Electric SUV berarsitektur canggih GEEA 3.0 & GEA Platform dengan Short-Blade Battery 60.22 kWh. Memiliki jarak tempuh hingga 495 km (NEDC), DC Fast Charging 20 menit, 15.4\" HD Touch-Screen FLYME AUTO, E04 7nm Chip, serta fitur V2L & V2V.",
+    keyHighlights: [
+      { top: "Jarak Tempuh", value: "495km", sub: "NEDC Combined Range" },
+      { top: "Pengisian Cepat", value: "20min", sub: "DC Fast Charge 30-80%" },
+      { top: "Akselerasi", value: "6.9s", sub: "0 - 100 km/h (PRO)" }
+    ],
+    gallery: [
+      "assets/ex5/16_1778576328-ex5-skyview-large.jpg.jpeg",
+      "assets/ex5/23_1766025537-exterior-sleek-sihouette.jpg",
+      "assets/ex5/26_1778577901-ex5-hud.jpg",
+      "assets/ex5/17_1778576599-ex5-smartech-large.jpg.jpeg",
+      "assets/ex5/25_1776152433-eight-airbags.jpeg",
+      "assets/ex5/30_1776269600-ex5-performance-1.jpg.jpeg",
+      "assets/ex5/21_1778581323-slide-3.jpeg"
+    ],
+    specs: {
+      "MOTOR LISTRIK & PERFORMA": [
+        { label: "Sistem Penggerak", value: "FWD (Front-Wheel Drive)" },
+        { label: "Tipe Motor Listrik", value: "Permanent Magnetic Synchronous Machine (11-in-1 Electrical Drive)" },
+        { label: "Tenaga Maksimal", value: "160 kW (218 PS)" },
+        { label: "Torsi Maksimal", value: "320 Nm" },
+        { label: "Kecepatan Maksimal", value: "175 km/h" },
+        { label: "Akselerasi 0-100 km/h", value: "6.9 Detik (PRO) / 7.1 Detik (MAX)" }
+      ],
+      "BATERAI & PENGISIAN DAYA": [
+        { label: "Tipe Baterai", value: "Lithium Iron Phosphate (Geely Short-Blade Battery)" },
+        { label: "Kapasitas Baterai", value: "60.22 kWh" },
+        { label: "Jarak Tempuh (NEDC)", value: "495 km (PRO) / 490 km (MAX)" },
+        { label: "DC Fast Charging (30-80%)", value: "20 Menit" },
+        { label: "AC Slow Charging (10-100%)", value: "6.1 Jam" },
+        { label: "Fitur V2L & V2V", value: "Tersedia (Vehicle-to-Load & Vehicle-to-Vehicle)" },
+        { label: "Jadwal Pengisian Daya Remote", value: "Tersedia (Remote Scheduled Charging)" }
+      ],
+      "DIMENSI & KAPASITAS": [
+        { label: "Panjang x Lebar x Tinggi", value: "4.615 x 1.901 x 1.670 mm" },
+        { label: "Wheelbase", value: "2.750 mm" },
+        { label: "Radius Putar Min.", value: "5.4 m" },
+        { label: "Ground Clearance (Unladen/Laden)", value: "173 / 145 mm" },
+        { label: "Kapasitas Bagasi (Min/Max)", value: "461 L / 1.877 L (33 Smart Storage Solutions)" },
+        { label: "Berat Kosong (Curb Weight)", value: "1.715 kg (PRO) / 1.765 kg (MAX)" },
+        { label: "Kapasitas Penumpang", value: "5 Kursi" }
+      ],
+      "SASIS, KEMUDI & REM": [
+        { label: "Suspensi Depan / Belakang", value: "F-MacPherson / R-Multi-Link Independent" },
+        { label: "Sistem Kemudi", value: "Electric Power Steering (EPS)" },
+        { label: "Sistem Pengereman", value: "Ventilated Disc (Depan) / Solid Disc (Belakang)" },
+        { label: "Regenerasi Energi", value: "Adjustable Braking Energy Recovery System" },
+        { label: "Rem Parkir Elektronik", value: "EPB dengan Auto-Hold" },
+        { label: "Ukuran Velg & Ban", value: "18-inch Alloy Wheels" }
+      ],
+      "INTERIOR & TEKNOLOGI PINTAR": [
+        { label: "Sistem Infotainment", value: "FLYME AUTO In-vehicle Infotainment System" },
+        { label: "Processor / Chipset", value: "7nm E04 High Performance Chipset" },
+        { label: "Layar Utama", value: "15.4-inch HD Touch-Screen" },
+        { label: "Panel Instrumen", value: "10.2-inch LCD Instrument Cluster" },
+        { label: "Head-Up Display", value: "13.8-inch Windshield W-HUD (MAX)" },
+        { label: "Asisten Suara", value: "\"Halo Geely\" Dual-Zone Voice Control (200+ Commands)" },
+        { label: "Sistem Audio", value: "6 Speakers (PRO) / FLYME SOUND 16-Speaker Premium System (MAX)" },
+        { label: "Konektivitas & Cas", value: "Wireless Charging, USB Type-A & Type-C, Bluetooth & OTA" },
+        { label: "Fitur Kenyamanan", value: "Panorama Power Sunroof (MAX), Power Tailgate (MAX), Heat Pump A/C" }
+      ],
+      "KESELAMATAN & ADAS": [
+        { label: "Jumlah Airbag", value: "6 Safety Airbags (Front, Side & Curtain Airbags)" },
+        { label: "Kamera Parkir & Sensor", value: "360° Surround Vision dengan Transparent Chassis & Front Radars" },
+        { label: "Fitur ADAS", value: "Level 2 ADAS 13 Fitur Lengkap (ACC, ICC, AEB, LKA, BSD, LCA, RCTA, RCTB, CMSF, CMSR, TSI, DOW, ELKA) (MAX)" },
+        { label: "Kontrol Keselamatan & Rem", value: "ESC, G-TCS, ABS, ARP, HAC, HDC, TPMS Digital & Multi-collision Braking (PIB)" }
+      ]
+    }
+  },
+  {
+    id: "ex2-ev",
+    tag: "EX2 EV",
+    name: "Geely EX2 EV",
+    shortName: "Geely EX2 EV",
+    price: "Rp239.900.000",
+    image: "assets/Geely-EX2.webp",
+    thumb: "assets/Geely-EX2.webp",
+    bgClass: "bg-slate-800",
+    description: "City car listrik RWD canggih berbasis platform EV modern. Dilengkapi baterai LFP 40.8 kWh berjarak tempuh 395 km (NEDC), DC Fast Charging 25 menit, layar 14.6\" FLYME AUTO, serta bagasi depan (Frunk) 70 L.",
+    keyHighlights: [
+      { top: "Jarak Tempuh", value: "395km", sub: "NEDC Combined Range" },
+      { top: "Pengisian Cepat", value: "25min", sub: "DC Fast Charge 30-80%" },
+      { top: "Sistem Penggerak", value: "85 kW", sub: "RWD (Rear-Wheel Drive)" }
+    ],
+    gallery: [
+      "assets/ex2/008_1789359132-ex2-1.png",
+      "assets/ex2/009_1789358805-ex2-1.png",
+      "assets/ex2/012_1789357891-ex2-1.png",
+      "assets/ex2/014_1789358332-ex2-1.png",
+      "assets/ex2/016_1789358698-ex2-1.png",
+      "assets/Photo/07_geely-ex2---cover-picture.jpg"
+    ],
+    specs: {
+      "MOTOR LISTRIK & PERFORMA": [
+        { label: "Sistem Penggerak", value: "Rear-Wheel Drive (RWD)" },
+        { label: "Tipe Motor Listrik", value: "Permanent Magnet Synchronous Motor (11-in-1 Electrical Drive)" },
+        { label: "Tenaga Maksimal", value: "85 kW (116 PS)" },
+        { label: "Torsi Maksimal", value: "150 Nm" },
+        { label: "Kecepatan Maksimal", value: "130 km/h" },
+        { label: "Akselerasi 0-100 km/h", value: "11.5 Detik" }
+      ],
+      "BATERAI & PENGISIAN DAYA": [
+        { label: "Tipe Baterai", value: "Lithium Iron Phosphate (LFP)" },
+        { label: "Kapasitas Baterai", value: "40.8 kWh" },
+        { label: "Jarak Tempuh (NEDC)", value: "395 km" },
+        { label: "Konsumsi Energi (NEDC)", value: "11.8 kWh / 100 km" },
+        { label: "DC Fast Charging (30-80%)", value: "25 Menit (Daya Maks. 70 kW)" },
+        { label: "AC Slow Charging (10-100%)", value: "6.5 Jam" },
+        { label: "Fitur V2L (Vehicle-to-Load)", value: "Tersedia (Standard)" }
+      ],
+      "DIMENSI & KAPASITAS": [
+        { label: "Panjang x Lebar x Tinggi", value: "4.135 x 1.805 x 1.580 mm" },
+        { label: "Wheelbase", value: "2.650 mm" },
+        { label: "Ground Clearance", value: "160.8 mm (PRO) / 162 mm (MAX)" },
+        { label: "Bagasi Belakang (Min/Max)", value: "375 L / 1.320 L" },
+        { label: "Bagasi Depan (Frunk)", value: "70 L" },
+        { label: "Kapasitas Penumpang", value: "5 Kursi" }
+      ],
+      "SASIS, REM & RODA": [
+        { label: "Suspensi Depan / Belakang", value: "F-MacPherson / R-Multi-Link Independent" },
+        { label: "Sistem Pengereman", value: "Ventilated Disc (Depan) / Solid Disc (Belakang)" },
+        { label: "Rem Parkir Elektronik", value: "EPB dengan Auto-Hold" },
+        { label: "Ukuran Velg & Ban", value: "15-inch Steel (PRO) / 16-inch Alloy (MAX)" }
+      ],
+      "INTERIOR & TEKNOLOGI": [
+        { label: "Sistem Infotainment", value: "FLYME AUTO In-vehicle Infotainment System" },
+        { label: "Layar Utama", value: "14.6-inch HD Touchscreen" },
+        { label: "Panel Instrumen", value: "8.8-inch LCD Instrument Cluster" },
+        { label: "Remote App Control", value: "Tersedia (App Vehicle Control)" },
+        { label: "Pengaturan Kursi Pengemudi", value: "6-Way (Manual PRO / Power MAX)" },
+        { label: "Pencahayaan Kabin", value: "256-Color Urban Starlight Ambient Light (MAX)" },
+        { label: "Sistem Keselamatan & ADAS", value: "Airbags, 540° Camera & 12-Function ADAS (MAX)" }
+      ]
+    }
+  },
+  {
     id: "starray-em-i",
     tag: "STARRAY EM-i",
     name: "Geely Starray EM-i",
@@ -67,54 +211,6 @@ const carModels = [
     }
   },
   {
-    id: "ex2-ev",
-    tag: "EX2 EV",
-    name: "Geely EX2 EV",
-    shortName: "Geely EX2 EV",
-    price: "Rp228.000.000",
-    image: "assets/Geely-EX2.webp",
-    thumb: "assets/Geely-EX2.webp",
-    bgClass: "bg-slate-800",
-    description: "City car listrik kompak yang lincah, stylish, dan ekstra hemat energi. Solusi sempurna mobilitas harian bebas emisi dengan fitur cerdas dan pengisian daya super cepat.",
-    keyHighlights: [
-      { top: "Jarak Tempuh", value: "305km", sub: "CLTC Pure Electric" },
-      { top: "Pengisian Cepat", value: "30min", sub: "DC Fast Charge 30-80%" },
-      { top: "Tenaga Motor", value: "82PS", sub: "60 kW Motor Listrik" }
-    ],
-    gallery: [
-      "assets/ex2/008_1789359132-ex2-1.png",
-      "assets/ex2/009_1789358805-ex2-1.png",
-      "assets/ex2/012_1789357891-ex2-1.png",
-      "assets/ex2/014_1789358332-ex2-1.png",
-      "assets/ex2/016_1789358698-ex2-1.png",
-      "assets/Photo/07_geely-ex2---cover-picture.jpg"
-    ],
-    specs: {
-      "MOTOR LISTRIK & PERFORMA": [
-        { label: "Tipe Motor", value: "Permanent Magnet Synchronous Motor" },
-        { label: "Tenaga Maksimal", value: "82 PS (60 kW)" },
-        { label: "Torsi Maksimal", value: "130 Nm" },
-        { label: "Kecepatan Maksimal", value: "125 km/h" }
-      ],
-      "BATERAI & PENGISIAN DAYA": [
-        { label: "Tipe Baterai", value: "Lithium Iron Phosphate (LFP)" },
-        { label: "Kapasitas Baterai", value: "39.4 kWh" },
-        { label: "Jarak Tempuh", value: "305 km (CLTC)" },
-        { label: "Fast Charging (30-80%)", value: "30 Menit (DC Fast Charge)" }
-      ],
-      "DIMENSI & KAPASITAS": [
-        { label: "Panjang x Lebar x Tinggi", value: "4.005 x 1.760 x 1.575 mm" },
-        { label: "Wheelbase", value: "2.485 mm" },
-        { label: "Kapasitas Penumpang", value: "5 Kursi" }
-      ],
-      "INTERIOR & TEKNOLOGI": [
-        { label: "Layar Infotainment", value: "10.25-inch Smart Touch Screen" },
-        { label: "Sistem Kemudi", value: "Electric Power Steering (EPS)" },
-        { label: "Kunci Pintar", value: "Keyless Entry & Push Start Button" }
-      ]
-    }
-  },
-  {
     id: "coolray",
     tag: "COOLRAY",
     name: "Geely Coolray",
@@ -159,55 +255,6 @@ const carModels = [
       "KESELAMATAN & PARKIR": [
         { label: "Kamera Parkir", value: "540° HD Panoramic Camera" },
         { label: "Parkir Otomatis", value: "APA (Automated Parking Assist)" }
-      ]
-    }
-  },
-  {
-    id: "ex5",
-    tag: "EX5 EV",
-    name: "Geely EX5 EV",
-    shortName: "Geely EX5 EV",
-    price: "Rp458.000.000",
-    image: "assets/Geely-EX5.webp",
-    thumb: "assets/Geely-EX5.webp",
-    bgClass: "bg-slate-900",
-    description: "Medium SUV listrik murni (BEV) berstandar global dengan platform canggih GEA. Jarak tempuh hingga 530 km, pengisian kilat 20 menit, dan sertifikasi keselamatan bintang lima.",
-    keyHighlights: [
-      { top: "Jarak Tempuh", value: "530km", sub: "CLTC Pure Electric" },
-      { top: "Pengisian Cepat", value: "20min", sub: "DC Fast Charge 30-80%" },
-      { top: "Akselerasi", value: "6.9s", sub: "0 - 100 km/h" }
-    ],
-    gallery: [
-      "assets/ex5/16_1778576328-ex5-skyview-large.jpg.jpeg",
-      "assets/ex5/23_1766025537-exterior-sleek-sihouette.jpg",
-      "assets/ex5/26_1778577901-ex5-hud.jpg",
-      "assets/ex5/17_1778576599-ex5-smartech-large.jpg.jpeg",
-      "assets/ex5/25_1776152433-eight-airbags.jpeg",
-      "assets/ex5/30_1776269600-ex5-performance-1.jpg.jpeg",
-      "assets/ex5/21_1778581323-slide-3.jpeg"
-    ],
-    specs: {
-      "MOTOR LISTRIK & PERFORMA": [
-        { label: "Tipe Motor", value: "Single Electric Motor FWD" },
-        { label: "Tenaga Maksimal", value: "218 PS (160 kW)" },
-        { label: "Torsi Maksimal", value: "320 Nm" },
-        { label: "Akselerasi 0-100 km/h", value: "6.9 Detik" }
-      ],
-      "BATERAI & PENGISIAN DAYA": [
-        { label: "Tipe Baterai", value: "Aegis Short Blade Battery" },
-        { label: "Kapasitas Baterai", value: "60.22 kWh" },
-        { label: "Jarak Tempuh EV", value: "530 km (CLTC)" },
-        { label: "Fast Charging (30-80%)", value: "20 Menit" }
-      ],
-      "DIMENSI & SASIS": [
-        { label: "Panjang x Lebar x Tinggi", value: "4.615 x 1.901 x 1.670 mm" },
-        { label: "Wheelbase", value: "2.750 mm" },
-        { label: "Ukuran Velg & Ban", value: "19-inch Sporty Two-Tone Alloy" }
-      ],
-      "KABIN & KESELAMATAN": [
-        { label: "Layar Utama", value: "15.4\" 2.5K Touchscreen dengan Flyme Auto" },
-        { label: "Sistem Audio", value: "Flyme Sound System dengan Headrest Speakers" },
-        { label: "Jumlah Airbag", value: "8 Safety Airbags" }
       ]
     }
   }
