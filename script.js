@@ -7,8 +7,8 @@ const carModels = [
     name: "Geely EX5 EV",
     shortName: "Geely EX5 EV",
     price: "Rp458.000.000",
-    image: "assets/Geely-EX5.webp",
-    thumb: "assets/Geely-EX5.webp",
+    image: "assets/Geely-EX5.webp?v=2",
+    thumb: "assets/Geely-EX5.webp?v=2",
     bgClass: "bg-slate-900",
     description: "Premium Electric SUV berarsitektur canggih GEEA 3.0 & GEA Platform dengan Short-Blade Battery 60.22 kWh. Memiliki jarak tempuh hingga 495 km (NEDC), DC Fast Charging 20 menit, 15.4\" HD Touch-Screen FLYME AUTO, E04 7nm Chip, serta fitur V2L & V2V.",
     keyHighlights: [
@@ -85,8 +85,8 @@ const carModels = [
     name: "Geely EX2 EV",
     shortName: "Geely EX2 EV",
     price: "Rp239.900.000",
-    image: "assets/Geely-EX2.webp",
-    thumb: "assets/Geely-EX2.webp",
+    image: "assets/Geely-EX2.webp?v=2",
+    thumb: "assets/Geely-EX2.webp?v=2",
     bgClass: "bg-slate-800",
     description: "City car listrik RWD canggih berbasis platform EV modern. Dilengkapi baterai LFP 40.8 kWh berjarak tempuh 395 km (NEDC), DC Fast Charging 25 menit, layar 14.6\" FLYME AUTO, serta bagasi depan (Frunk) 70 L.",
     keyHighlights: [
@@ -151,8 +151,8 @@ const carModels = [
     name: "Geely Starray EM-i",
     shortName: "Geely Starray EM-i",
     price: "Rp498.000.000",
-    image: "assets/Geely-starray-em-i.webp",
-    thumb: "assets/Geely-starray-em-i.webp",
+    image: "assets/Geely-starray-em-i.webp?v=2",
+    thumb: "assets/Geely-starray-em-i.webp?v=2",
     bgClass: "bg-slate-900",
     description: "Super Hybrid SUV revolusioner berteknologi NordThor Powertrain. Jarak jelajah ekstra irit hingga 1.420 km sekali isi, performa instan bertenaga, serta kenyamanan kabin pintar kelas atas.",
     keyHighlights: [
@@ -216,8 +216,8 @@ const carModels = [
     name: "Geely Coolray",
     shortName: "Geely Coolray",
     price: "Rp385.000.000",
-    image: "assets/Geely-Coolray.webp",
-    thumb: "assets/Geely-Coolray.webp",
+    image: "assets/Geely-Coolray.webp?v=2",
+    thumb: "assets/Geely-Coolray.webp?v=2",
     bgClass: "bg-slate-800",
     description: "Compact SUV sporty berkinerja tinggi dengan mesin 1.5L Turbo Leishen Power. Akselerasi instan 0-100 km/h dalam 7,6 detik dan gaya aerodinamis yang membakar semangat.",
     keyHighlights: [
