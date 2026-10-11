@@ -6,7 +6,7 @@ const carModels = [
     tag: "EX5 EV",
     name: "Geely EX5 EV",
     shortName: "Geely EX5 EV",
-    price: "Rp458.000.000",
+    price: "Rp465.000.000",
     image: "assets/Geely-EX5.webp?v=2",
     thumb: "assets/Geely-EX5.webp?v=2",
     bgClass: "bg-slate-900",
@@ -26,6 +26,15 @@ const carModels = [
       "assets/ex5/21_1778581323-slide-3.jpeg"
     ],
     specs: {
+      "DAFTAR HARGA & GARANSI RESMI 2026": [
+        { label: "Geely EX5 Pro", value: "Rp465.000.000" },
+        { label: "Geely EX5 Max", value: "Rp505.000.000" },
+        { label: "Bonus Pembelian", value: "Free Home Charger" },
+        { label: "Layanan Darurat (ERA)", value: "5 Tahun (Unlimited km)" },
+        { label: "Garansi Kendaraan", value: "8 Tahun / 180.000 km" },
+        { label: "Garansi Electric Powertrain", value: "8 Tahun / 180.000 km (2 Powertrain)" },
+        { label: "Garansi Power Battery", value: "Lifetime Warranty (SOH >70%)" }
+      ],
       "MOTOR LISTRIK & PERFORMA": [
         { label: "Sistem Penggerak", value: "FWD (Front-Wheel Drive)" },
         { label: "Tipe Motor Listrik", value: "Permanent Magnetic Synchronous Machine (11-in-1 Electrical Drive)" },
@@ -103,6 +112,16 @@ const carModels = [
       "assets/Photo/07_geely-ex2---cover-picture.jpg"
     ],
     specs: {
+      "DAFTAR HARGA & GARANSI RESMI 2026": [
+        { label: "Geely EX2 Pro", value: "Rp239.900.000" },
+        { label: "Geely EX2 Max", value: "Rp269.900.000" },
+        { label: "Pilihan Honor Colour", value: "+ Rp3.000.000" },
+        { label: "Bonus Pembelian", value: "Free Portable & Home Charger (Tipe Max)" },
+        { label: "Layanan Darurat (ERA)", value: "3 Tahun (Unlimited km)" },
+        { label: "Garansi Kendaraan", value: "5 Tahun / 150.000 km" },
+        { label: "Garansi Komponen Listrik", value: "8 Tahun / 180.000 km (3 Komponen)" },
+        { label: "Gratis Jasa Perawatan", value: "5 Tahun / 50.000 km (Promo GIIAS 2026)" }
+      ],
       "MOTOR LISTRIK & PERFORMA": [
         { label: "Sistem Penggerak", value: "Rear-Wheel Drive (RWD)" },
         { label: "Tipe Motor Listrik", value: "Permanent Magnet Synchronous Motor (11-in-1 Electrical Drive)" },
@@ -150,15 +169,15 @@ const carModels = [
     tag: "STARRAY EM-i",
     name: "Geely Starray EM-i",
     shortName: "Geely Starray EM-i",
-    price: "Rp498.000.000",
+    price: "Rp499.000.000",
     image: "assets/Geely-starray-em-i.webp?v=2",
     thumb: "assets/Geely-starray-em-i.webp?v=2",
     bgClass: "bg-slate-900",
-    description: "Super Hybrid SUV revolusioner berteknologi NordThor Powertrain. Jarak jelajah ekstra irit hingga 1.420 km sekali isi, performa instan bertenaga, serta kenyamanan kabin pintar kelas atas.",
+    description: "Super Hybrid SUV cerdas pertama berbasis GEA Pure NEV Platform dengan efisiensi termal mesin 46,5%. Jarak tempuh kombinasi 1.000+ km, mode listrik murni 105 km, DC Fast Charging 20 menit, dan kabin mewah FLYME AUTO.",
     keyHighlights: [
-      { top: "Jarak Jelajah", value: "1.420km", sub: "Kombinasi Total" },
-      { top: "Mode Listrik", value: "105km", sub: "Pure EV Range" },
-      { top: "Akselerasi", value: "7.5s", sub: "0 - 100 km/h" }
+      { top: "Jarak Tempuh", value: "1.000+km", sub: "Kombinasi Total" },
+      { top: "Mode Listrik", value: "105km", sub: "Pure EV Range (NEDC)" },
+      { top: "Fast Charging", value: "20min", sub: "DC Charge 30-80%" }
     ],
     gallery: [
       "assets/starray em-i/05_1778503301-exterior-1.jpeg",
@@ -171,41 +190,64 @@ const carModels = [
       "assets/starray em-i/75_1766552789-driving-safety-540-parking-assist.jpeg"
     ],
     specs: {
-      "MESIN & PERFORMA HYBRID": [
-        { label: "Tipe Mesin", value: "1.5L NordThor Hybrid Powertrain" },
-        { label: "Tenaga Maksimal", value: "218 PS (160 kW)" },
-        { label: "Torsi Maksimal", value: "310 Nm" },
-        { label: "Transmisi", value: "DHT (Dedicated Hybrid Transmission)" },
-        { label: "Akselerasi 0-100 km/h", value: "7.5 Detik" }
+      "DAFTAR HARGA & GARANSI RESMI 2026": [
+        { label: "Harga Resmi OTR", value: "Rp499.000.000" },
+        { label: "Garansi Kendaraan", value: "6 Tahun / 150.000 km" },
+        { label: "Garansi Mesin", value: "6 Tahun / 150.000 km" },
+        { label: "Garansi Motor Listrik", value: "8 Tahun / 180.000 km" },
+        { label: "Garansi Baterai", value: "8 Tahun / 180.000 km" },
+        { label: "Gratis Jasa Perawatan", value: "Lifetime Maintenance Labor Free (Seumur Hidup)" },
+        { label: "Layanan Darurat (ERA)", value: "3 Tahun (Unlimited km)" }
       ],
-      "BATERAI & JARAK TEMPUH": [
-        { label: "Tipe Baterai", value: "Aegis Short Blade Battery" },
-        { label: "Kapasitas Baterai", value: "19.09 kWh" },
-        { label: "Jarak Tempuh EV", value: "105 km (Pure EV)" },
-        { label: "Jarak Tempuh Total", value: "1.420 km (Kombinasi)" },
-        { label: "Efisiensi Bahan Bakar", value: "3.75 L / 100 km" }
+      "POWERTRAIN & PERFORMA": [
+        { label: "Tipe Powertrain", value: "Plug-in Hybrid (PHEV) / FWD" },
+        { label: "Platform", value: "GEA Global Intelligent New Energy Architecture" },
+        { label: "Mesin Bensin", value: "1.5L 4-Cylinder (1.499 cc)" },
+        { label: "Efisiensi Termal Mesin", value: "46.5% (Highest Thermal Efficiency)" },
+        { label: "Tenaga & Torsi Mesin", value: "73 kW (99 PS) / 125 Nm" },
+        { label: "Motor Listrik (E-Motor)", value: "Permanent Magnet Synchronous (160 kW / 218 PS, 262 Nm)" },
+        { label: "Transmisi", value: "1DHT Automatic (Dedicated Hybrid)" },
+        { label: "Mode Berkendara", value: "Pure / Hybrid / Power" },
+        { label: "Akselerasi 0-100 km/h", value: "8.0 Detik" },
+        { label: "Kecepatan Maksimal", value: "170 km/h" }
+      ],
+      "BATERAI & EFISIENSI": [
+        { label: "Tipe Baterai", value: "Lithium Iron Phosphate (Aegis LFP)" },
+        { label: "Kapasitas Baterai", value: "18.4 kWh" },
+        { label: "Jarak Tempuh EV (NEDC)", value: "105 km (Pure Electric)" },
+        { label: "Jarak Tempuh Kombinasi", value: "1.000+ km (Baterai & Bensin)" },
+        { label: "Konsumsi BBM (Full SOC)", value: "1.2 L / 100 km (Up to 83 km/L*)" },
+        { label: "Konsumsi BBM (Low SOC)", value: "4.3 L / 100 km (~23.2 km/L)" },
+        { label: "DC Fast Charging (30-80%)", value: "< 20 Menit (Daya Maks. 30 kW)" },
+        { label: "AC Charging", value: "< 3 Jam (Daya Maks. 6.6 kW)" },
+        { label: "Fitur Daya Eksternal", value: "V2L (Vehicle-to-Load) & V2V (Vehicle-to-Vehicle)" }
       ],
       "DIMENSI & KAPASITAS": [
-        { label: "Panjang x Lebar x Tinggi", value: "4.670 x 1.900 x 1.705 mm" },
-        { label: "Wheelbase", value: "2.775 mm" },
-        { label: "Ground Clearance", value: "172 mm" },
-        { label: "Kapasitas Penumpang", value: "5 Kursi Premium" }
+        { label: "Wheelbase", value: "2.755 mm" },
+        { label: "Ground Clearance Min.", value: "172 mm" },
+        { label: "Kapasitas Bagasi", value: "528 L (Normal) / 2.065 L (Maksimal)" },
+        { label: "Kapasitas Tangki BBM", value: "51 Liter" },
+        { label: "Kapasitas Penumpang", value: "5 Kursi (8-Layer Marshmallow-Feel)" }
       ],
-      "SASIS & PENGEREMAN": [
+      "SASIS, KEMUDI & RODA": [
         { label: "Suspensi Depan", value: "MacPherson Independent" },
         { label: "Suspensi Belakang", value: "Multi-Link Independent" },
-        { label: "Sistem Pengereman", value: "Ventilated Disc (Depan & Belakang)" },
-        { label: "Ukuran Velg & Ban", value: "19-inch Two-Tone Alloy" }
+        { label: "Sistem Kemudi", value: "Electric Power Steering (Tilt & Telescopic)" },
+        { label: "Sistem Pengereman", value: "Ventilated Disc (Depan) / Solid Disc (Belakang)" },
+        { label: "Ukuran Velg & Ban", value: "18-inch Alloy Wheels" }
       ],
-      "INTERIOR & HIBURAN": [
-        { label: "Layar Utama", value: "15.4\" 2.5K HD Touchscreen Display" },
-        { label: "Sistem Audio", value: "Flyme Sound 16 Speakers" },
-        { label: "Head-Up Display", value: "W-HUD Full Color Display" },
-        { label: "Konektivitas", value: "Apple CarPlay & Android Auto" }
+      "INTERIOR & TEKNOLOGI": [
+        { label: "Sistem Infotainment", value: "FLYME AUTO In-Vehicle Infotainment System" },
+        { label: "Layar Sentuh Utama", value: "15.4\" HD Central Screen" },
+        { label: "Panel Instrumen", value: "10.2\" LCD Dash Display" },
+        { label: "Sistem Audio", value: "Flyme Sound 16 Speakers (termasuk Headrest Speakers & Subwoofer)" },
+        { label: "Kenyamanan Jok Depan", value: "Ventilated Seats & 6-Way Power Driver Seat + Memory" },
+        { label: "Panoramic Sunroof", value: "Panoramic Power Sunroof dengan Power Sunshade" },
+        { label: "Fitur Cerdas Lainnya", value: "Wireless Charger, 256-Color Ambient Light, Remote APP Mobile Control" }
       ],
       "KESELAMATAN & ADAS": [
-        { label: "Sistem ADAS", value: "Level 2+ Intelligent Driver Assistance" },
-        { label: "Kamera Parkir", value: "540° HD Camera dengan Transparent Chassis" },
+        { label: "Sistem ADAS", value: "Level 2 ADAS dengan 14 Fungsi (ACC, ICC, AEB, LKA, ELKA, BSD, RCTA, dll.)" },
+        { label: "Kamera Parkir", value: "540° Panoramic View dengan Transparent Chassis" },
         { label: "Jumlah Airbag", value: "6 Safety Airbags" }
       ]
     }
@@ -215,15 +257,15 @@ const carModels = [
     tag: "COOLRAY",
     name: "Geely Coolray",
     shortName: "Geely Coolray",
-    price: "Rp385.000.000",
+    price: "Rp333.000.000",
     image: "assets/Geely-Coolray.webp?v=2",
     thumb: "assets/Geely-Coolray.webp?v=2",
     bgClass: "bg-slate-800",
-    description: "Compact SUV sporty berkinerja tinggi dengan mesin 1.5L Turbo Leishen Power. Akselerasi instan 0-100 km/h dalam 7,6 detik dan gaya aerodinamis yang membakar semangat.",
+    description: "Compact SUV sporty berkinerja tinggi dengan mesin 1.5L Turbo (174 PS / 290 Nm) & transmisi 7-Speed Wet DCT. Dilengkapi kokpit futuristik dengan layar 14.6\" HD, Column Shifter, 10 Fitur ADAS Level 2, serta garansi 6 tahun / 150.000 km.",
     keyHighlights: [
-      { top: "Tenaga Mesin", value: "177PS", sub: "1.5L Turbo Leishen" },
-      { top: "Torsi Maksimal", value: "255Nm", sub: "1.500 - 4.000 rpm" },
-      { top: "Akselerasi", value: "7.6s", sub: "0 - 100 km/h" }
+      { top: "Tenaga Mesin", value: "174PS", sub: "1.5L Turbocharged" },
+      { top: "Torsi Maksimal", value: "290Nm", sub: "Performa Instan" },
+      { top: "Kecepatan Maks.", value: "200km/h", sub: "7-Speed Wet DCT" }
     ],
     gallery: [
       "assets/coolray/23_1782959284-coolray-headlight-frontgrille-large.jpg.jpeg",
@@ -236,25 +278,59 @@ const carModels = [
     ],
     specs: {
       "MESIN & PERFORMA TURBO": [
-        { label: "Tipe Mesin", value: "1.5L 4-Cylinder Turbocharged Leishen" },
-        { label: "Tenaga Maksimal", value: "177 PS @ 5.500 rpm" },
-        { label: "Torsi Maksimal", value: "255 Nm @ 1.500-4.000 rpm" },
-        { label: "Transmisi", value: "7-Speed Wet Dual Clutch (7DCT)" },
-        { label: "Akselerasi 0-100 km/h", value: "7.6 Detik" }
+        { label: "Tipe Mesin", value: "1.5L 4-Cylinder Turbocharged" },
+        { label: "Tenaga Maksimal", value: "174 PS" },
+        { label: "Torsi Maksimal", value: "290 Nm" },
+        { label: "Transmisi", value: "7-Speed Wet Dual Clutch (DCT)" },
+        { label: "Sistem Penggerak", value: "Front-Wheel Drive (FWD)" },
+        { label: "Mode Berkendara", value: "4 Mode (Eco / Comfort / Sport / Adaptive)" },
+        { label: "Kecepatan Maksimal", value: "200 km/h" }
       ],
-      "DIMENSI & DESAIN": [
-        { label: "Panjang x Lebar x Tinggi", value: "4.380 x 1.800 x 1.609 mm" },
+      "DIMENSI & KAPASITAS": [
+        { label: "Panjang x Lebar x Tinggi", value: "4.380 x 1.795 x 1.609 mm" },
         { label: "Wheelbase", value: "2.600 mm" },
-        { label: "Sunroof", value: "Panoramic Sunroof dengan Electric Shade" }
+        { label: "Ground Clearance Min.", value: "161 mm" },
+        { label: "Kapasitas Bagasi", value: "330 Liter" },
+        { label: "Kapasitas Penumpang", value: "5 Kursi" }
+      ],
+      "SASIS, KEMUDI & RODA": [
+        { label: "Suspensi Depan / Belakang", value: "MacPherson / Torsion Beam" },
+        { label: "Sistem Kemudi", value: "Electric Power Steering (EPS)" },
+        { label: "Sistem Pengereman", value: "Ventilated Disc (Depan) / Solid Disc (Belakang)" },
+        { label: "Rem Parkir Elektronik", value: "EPB dengan Auto Hold" },
+        { label: "Ukuran Velg & Ban", value: "18\" Sporty Black Edition (Flagship) / 17\" Alloy (Standard)" }
+      ],
+      "EKSTERIOR & GAYA": [
+        { label: "Lampu Utama & Belakang", value: "Automatic LED Headlights & Full LED Taillights" },
+        { label: "Fitur Pintu Bagasi", value: "Electric / Power Tailgate (Flagship)" },
+        { label: "Atap & Kaca", value: "Panoramic Sunroof & Privacy Glass (Flagship)" },
+        { label: "Gaya Bodi & Spoiler", value: "Sporty Fascia, Two-Tone Body Color & Sporty Spoiler" },
+        { label: "Wiper", value: "Auto Frameless Wipers dengan Rain Sensor" }
       ],
       "INTERIOR & TEKNOLOGI": [
-        { label: "Layar Infotainment", value: "12.3-inch HD Display Screen" },
-        { label: "Panel Instrumen", value: "10.25-inch Full Digital LCD" },
-        { label: "Wireless Charger", value: "Available 15W Fast Charging" }
+        { label: "Layar Sentuh Utama", value: "14.6\" HD Touch-Screen dengan Apple CarPlay & Android Auto" },
+        { label: "Panel Instrumen", value: "8.88\" LCD Digital Cluster" },
+        { label: "Tuas Transmisi", value: "Column Shifter (Elektronik Kolom Kemudi)" },
+        { label: "Material & Warna Jok", value: "Two-Tone Black & Burnt Red Perforated Leather (Flagship)" },
+        { label: "Pengaturan Kursi Pengemudi", value: "6-Way Power Adjust (Flagship) / Manual (Standard)" },
+        { label: "Fitur Kabin Cerdas", value: "Wireless Charging, Multi-Color Ambient Lights, Translucent Sun Visor" }
       ],
-      "KESELAMATAN & PARKIR": [
-        { label: "Kamera Parkir", value: "540° HD Panoramic Camera" },
-        { label: "Parkir Otomatis", value: "APA (Automated Parking Assist)" }
+      "KESELAMATAN & ADAS": [
+        { label: "Sistem ADAS", value: "Level 2 ADAS dengan 10 Fungsi (ACC, ICA, AEB, LDW, LKA, FCW, TSR, dll.)" },
+        { label: "Kamera Parkir", value: "540° Panoramic View dengan Transparent Chassis" },
+        { label: "Jumlah Airbag", value: "6 Safety Airbags (Dual Depan, Samping, Tirai)" },
+        { label: "Struktur Bodi", value: "Super Rigid Body (66% High-Strength Steel, BMA Platform)" },
+        { label: "Kontrol Keselamatan", value: "ESC, TCS, ABS, EBD, HBA, Hill Hold & Descent Control, TPMS" }
+      ],
+      "DAFTAR HARGA & GARANSI RESMI 2026": [
+        { label: "Coolray Standard", value: "Rp333.000.000" },
+        { label: "Coolray Flagship", value: "Rp377.000.000" },
+        { label: "Garansi Kendaraan", value: "6 Tahun / 150.000 km" },
+        { label: "Garansi Mesin", value: "6 Tahun / 150.000 km" },
+        { label: "Garansi Transmisi", value: "6 Tahun / 150.000 km" },
+        { label: "Garansi Aki / Baterai", value: "1 Tahun / 20.000 km" },
+        { label: "Gratis Biaya Perawatan", value: "Free Periodical Maintenance" },
+        { label: "Layanan Darurat (ERA)", value: "3 Tahun (Unlimited km)" }
       ]
     }
   }
