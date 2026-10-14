@@ -1,0 +1,20 @@
+{
+  "name": "Geely Gading Serpong",
+  "short_name": "Geely GS",
+  "icons": [
+    {
+      "src": "/assets/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0A101D",
+  "background_color": "#0A101D",
+  "display": "standalone",
+  "start_url": "/"
+}
