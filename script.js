@@ -727,7 +727,7 @@ function setupEventListeners() {
     }
   });
 
-  // WhatsApp click handler helper
+  // WhatsApp click handler helper (triggers Google Ads Kontak conversion)
   window.openWhatsApp = function(customText) {
     const defaultModel = carModels[currentIndex].name;
     const phone = "6285111038416";
@@ -736,6 +736,9 @@ function setupEventListeners() {
       message = `Halo Toto Kusumah, saya tertarik dengan ${defaultModel} di Geely Gading Serpong. Boleh minta info promo & simulasi kredit terbaru?`;
     }
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    if (typeof window.gtag_report_conversion === "function") {
+      window.gtag_report_conversion();
+    }
     window.open(url, "_blank");
   };
 
