@@ -277,6 +277,16 @@ const carModels = [
       "assets/coolray/44_1784113005-coolray-wireless-charging.jpg.jpeg"
     ],
     specs: {
+      "DAFTAR HARGA & GARANSI RESMI 2026": [
+        { label: "Coolray Standard", value: "Rp333.000.000" },
+        { label: "Coolray Flagship", value: "Rp377.000.000" },
+        { label: "Garansi Kendaraan", value: "6 Tahun / 150.000 km" },
+        { label: "Garansi Mesin", value: "6 Tahun / 150.000 km" },
+        { label: "Garansi Transmisi", value: "6 Tahun / 150.000 km" },
+        { label: "Garansi Aki / Baterai", value: "1 Tahun / 20.000 km" },
+        { label: "Gratis Biaya Perawatan", value: "Free Periodical Maintenance" },
+        { label: "Layanan Darurat (ERA)", value: "3 Tahun (Unlimited km)" }
+      ],
       "MESIN & PERFORMA TURBO": [
         { label: "Tipe Mesin", value: "1.5L 4-Cylinder Turbocharged" },
         { label: "Tenaga Maksimal", value: "174 PS" },
@@ -321,16 +331,6 @@ const carModels = [
         { label: "Jumlah Airbag", value: "6 Safety Airbags (Dual Depan, Samping, Tirai)" },
         { label: "Struktur Bodi", value: "Super Rigid Body (66% High-Strength Steel, BMA Platform)" },
         { label: "Kontrol Keselamatan", value: "ESC, TCS, ABS, EBD, HBA, Hill Hold & Descent Control, TPMS" }
-      ],
-      "DAFTAR HARGA & GARANSI RESMI 2026": [
-        { label: "Coolray Standard", value: "Rp333.000.000" },
-        { label: "Coolray Flagship", value: "Rp377.000.000" },
-        { label: "Garansi Kendaraan", value: "6 Tahun / 150.000 km" },
-        { label: "Garansi Mesin", value: "6 Tahun / 150.000 km" },
-        { label: "Garansi Transmisi", value: "6 Tahun / 150.000 km" },
-        { label: "Garansi Aki / Baterai", value: "1 Tahun / 20.000 km" },
-        { label: "Gratis Biaya Perawatan", value: "Free Periodical Maintenance" },
-        { label: "Layanan Darurat (ERA)", value: "3 Tahun (Unlimited km)" }
       ]
     }
   }
@@ -348,7 +348,67 @@ document.addEventListener("DOMContentLoaded", () => {
   initFooterShader();
   initScrollRevealAnimations();
   initDesktopStickyMagnet();
+  handleSitelinkRouting();
+  window.addEventListener("hashchange", handleSitelinkRouting);
 });
+
+function handleSitelinkRouting() {
+  const path = window.location.pathname.toLowerCase().replace(/\/+$/, "");
+  const hash = window.location.hash.toLowerCase().replace(/^#/, "");
+  const params = new URLSearchParams(window.location.search);
+  const sitelinkParam = (params.get("sitelink") || "").toLowerCase();
+  const target = hash || sitelinkParam || path.replace(/^\//, "");
+
+  if (!target) return;
+
+  const isDesktop = window.innerWidth >= 768;
+
+  // 1. Sitelink: Test Drive -> Buka Modal Form Test Drive (terhubung ke WhatsApp)
+  if (target === "test-drive" || target === "testdrive") {
+    setTimeout(() => {
+      if (typeof window.openTestDriveModal === "function") {
+        window.openTestDriveModal();
+      }
+    }, 150);
+    return;
+  }
+
+  // 2. Sitelink: Daftar Harga & Garansi -> Buka Accordion Harga/Garansi & Scroll ke Bagian Harga
+  if (target === "daftar-harga-garansi" || target === "harga-garansi" || target === "harga") {
+    setTimeout(() => {
+      if (isDesktop) {
+        const desktopScene = document.getElementById("desktop-scene-product");
+        if (desktopScene) desktopScene.scrollIntoView({ behavior: "smooth" });
+      } else {
+        const content = document.getElementById("spec-accordion-wrapper");
+        const btnText = document.getElementById("accordion-btn-text");
+        const btnIcon = document.getElementById("accordion-btn-icon");
+        if (content && !content.classList.contains("expanded")) {
+          content.classList.add("expanded");
+          if (btnText) btnText.textContent = "Sembunyikan Spesifikasi";
+          if (btnIcon) btnIcon.className = "fa-solid fa-chevron-up text-xs transition-transform duration-300";
+        }
+        const mobileSpecs = document.getElementById("mobile-section-specs") || document.getElementById("mobile-section-product");
+        if (mobileSpecs) mobileSpecs.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 150);
+    return;
+  }
+
+  // 3. Sitelink: Hubungi Kami -> Scroll ke Bagian Profil Sales Resmi, WhatsApp & Lokasi Dealer
+  if (target === "hubungi-kami" || target === "kontak" || target === "contact") {
+    setTimeout(() => {
+      if (isDesktop) {
+        const desktopContact = document.getElementById("desktop-scene-contact");
+        if (desktopContact) desktopContact.scrollIntoView({ behavior: "smooth" });
+      } else {
+        const mobileContact = document.getElementById("mobile-section-contact");
+        if (mobileContact) mobileContact.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 150);
+    return;
+  }
+}
 
 function initHeroVideo() {
   const videos = [

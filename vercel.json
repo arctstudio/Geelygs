@@ -1,4 +1,10 @@
 {
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/test-drive", "destination": "/index.html" },
+    { "source": "/daftar-harga-garansi", "destination": "/index.html" },
+    { "source": "/hubungi-kami", "destination": "/index.html" }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",
